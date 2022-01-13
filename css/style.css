@@ -1,0 +1,106 @@
+body{
+    font-family:'Roboto';
+    font-size: 50px;
+}
+#blocpage{
+    width: 100%;
+    margin: auto;
+
+}
+header{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    background-color: turquoise;
+}
+.btn_localisation{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color:rgba(241, 235, 233, 0.685);
+    width: 100%;
+}
+.btn_localisation i{
+    margin-right: 30px;
+}
+.explorer{
+    text-align: center;
+    background-color: whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    height: 800px;
+}
+.explorer h2{
+    font-size: 90px;
+}
+.btn_explorer{
+    width: 70%;
+    padding: 35px;
+    margin: auto;
+    color: white;
+    font-size: 60px;
+    background-color: #9356DC;
+    border: solid #9356DC;
+    border-radius: 70px/70px;
+    box-shadow: 10px 25px;
+}
+
+
+
+
+
+
+
+
+#les_menus{
+    background-color: whitesmoke;
+}
+#les_menus h2{
+    padding-left: 60px;
+    padding-top: 110px;
+}
+.element a{
+    text-decoration: none;
+    color: black;
+}
+.element{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    border-radius: 40px 40px 40px 40px; 
+    overflow: hidden;
+    box-shadow: 30px 35px 60px #F2F2F2;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.card_image{
+   height: 400px;
+}
+.card_image img{
+    width: 100%;
+    height: 100%;
+}
+.element h3,p{
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(54, 52, 52);
+    color: white;
+    padding-left: 70px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
