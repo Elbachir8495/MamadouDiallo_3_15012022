@@ -4,7 +4,7 @@ body{
 #blocpage{
     width: 100%;
     margin: auto;
-
+background-color: linear;
 }
 header{
     width: 100%;
@@ -40,13 +40,47 @@ header{
     margin: auto;
     color: white;
     font-size: 60px;
-    background-color: linear-gradient(#9356DC, red);
-    border: solid #9356DC;
+    background: #792fd3;
     border-radius: 70px/70px;
     box-shadow: 10px 25px;
     
 }
-
+#fonctionnement{
+    padding-left: ;
+    position: relative;
+    margin-right:30px;
+}
+#fonctionnement  {
+    padding-left: 40px;
+}
+.fonctionnement{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    border: 0px solid ;
+    border-radius: 60px/60px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-size: 50px;
+}
+.btn_fonctionnement{
+    position: absolute;
+    border: 1px solid;
+    border-radius: 50px/50px;
+    background-color: #792fd3;
+    text-align: center;
+    width: 60px;
+    padding: 5px;
+    color: white;
+}
+.fonctionnement i{
+    position: relative;
+    font-size: 50px;
+}
+.fonctionnement:hover{
+    background-color: #efe7fa;
+}
 
 
 
@@ -106,6 +140,7 @@ footer{
     color: white;
     padding-left: 70px;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 footer a{
     color: white;
