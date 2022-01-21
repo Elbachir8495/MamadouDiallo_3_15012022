@@ -12,13 +12,26 @@ header{
     text-align: center;
     padding-top: 10px;
     background-color: white;
+}
+.heading_menu{
+    display: flex;
+    align-items: baseline;
+    padding-left: 50px;
+    width: auto;
+   
+    p{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 70px;
+    }
 
 }
 .btn_localisation{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    background-color:rgba(241, 235, 233, 0.685);
+    background-color:rgba(218, 214, 212, 0.534);
     width: 100%;
  i{
     margin-right: 30px;
@@ -74,12 +87,14 @@ header{
     i{
         position: relative;
         font-size: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .btn:hover{
         background-color: #efe7fa;
     }
 }
-#les_menus{
+#les_restos{
     background-color: whitesmoke;
     padding-bottom: 70px;
 
@@ -98,13 +113,26 @@ header{
         margin: auto;
         border-radius: 40px 40px 40px 40px; 
         overflow: hidden;
-        box-shadow: 30px 35px 60px #F2F2F2;
+        box-shadow: 20px 25px 10px whitesmoke;
         margin-left: 50px;
         line-height: 20px;
         margin-bottom: 50px;
+        transform: scale(1);
+        transition: transform 100ms;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
-    .element h3,p{
+     h3,p{
         padding-left: 40px;
+    }
+    i{
+        background: #792fd3;
+    }
+    
+    i:hover{
+        background:#792fd3;
+        color: #792fd3;
     }
     .card_image{
        height: 400px;
@@ -119,6 +147,37 @@ header{
         align-items: baseline;
         padding-right: 40px;
     }
+}
+.banniere_menu img{
+    width: 100%;
+}
+.le_menu{
+    background: whitesmoke;
+    transform:translateY(-150px);
+    border-radius: 80px 80px 0px 0px;
+    padding: 30px;
+}
+.les_elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.element{
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 50px/50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    line-height: 0px;
+    font-size: 45px;
+}
+.element h3{
+    font-size: 50px;
+}
+.element span{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 footer{
     background-color: rgb(54, 52, 52);
