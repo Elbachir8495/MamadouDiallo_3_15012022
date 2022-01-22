@@ -1,5 +1,9 @@
+$color_primary:#9356DC;
+$color_secondary:#FF79DA;
+$color_tertiary: #99E2D0;
 body{
     font-size: 50px;
+    box-sizing: border-box;
 }
 #blocpage{
     width: 100%;
@@ -11,7 +15,7 @@ header{
     margin: auto;
     text-align: center;
     padding-top: 10px;
-    background-color: white;
+    background-color:white;
 }
 .heading_menu{
     display: flex;
@@ -78,7 +82,7 @@ header{
         position: absolute;
         border: 1px solid;
         border-radius: 50px/50px;
-        background-color: #792fd3;
+        background-color: $color_primary;
         text-align: center;
         width: 60px;
         padding: 5px;
@@ -97,6 +101,7 @@ header{
 #les_restos{
     background-color: whitesmoke;
     padding-bottom: 70px;
+  
 
     h2{
         padding-left: 60px;
@@ -122,13 +127,20 @@ header{
             transform: scale(1.05);
         }
     }
+    .btn_new{
+        background-color:$color_tertiary;
+        border: solid $color_tertiary;
+        position: absolute;
+        font-size: 50px;
+        width: auto;
+        text-align: justify;
+        padding: 30px;
+        margin: 40px;
+        transform: translateX(650px);
+    }
      h3,p{
         padding-left: 40px;
     }
-    i{
-        
-    }
-    
     i:hover{
         background:#792fd3;
         color: #792fd3;
@@ -136,10 +148,13 @@ header{
 
     .card_image{
        height: 400px;
+       position: relative;
+       
     }
     .card_image img{
         width: 100%;
         height: 100%;
+       
     }
     .card_body{
         display: flex;

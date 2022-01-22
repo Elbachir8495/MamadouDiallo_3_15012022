@@ -1,5 +1,6 @@
 body {
   font-size: 50px;
+  box-sizing: border-box;
 }
 
 #blocpage {
@@ -81,7 +82,7 @@ header {
   position: absolute;
   border: 1px solid;
   border-radius: 50px/50px;
-  background-color: #792fd3;
+  background-color: #9356DC;
   text-align: center;
   width: 60px;
   padding: 5px;
@@ -124,6 +125,17 @@ header {
 #les_restos .card:hover {
   transform: scale(1.05);
 }
+#les_restos .btn_new {
+  background-color: #99E2D0;
+  border: solid #99E2D0;
+  position: absolute;
+  font-size: 50px;
+  width: auto;
+  text-align: justify;
+  padding: 30px;
+  margin: 40px;
+  transform: translateX(650px);
+}
 #les_restos h3, #les_restos p {
   padding-left: 40px;
 }
@@ -133,6 +145,7 @@ header {
 }
 #les_restos .card_image {
   height: 400px;
+  position: relative;
 }
 #les_restos .card_image img {
   width: 100%;
