@@ -109,27 +109,23 @@ header {
   text-decoration: none;
   color: black;
 }
-#les_restos .element {
+#les_restos .card {
   width: 90%;
   height: 600px;
-  margin: auto;
   border-radius: 40px 40px 40px 40px;
   overflow: hidden;
-  box-shadow: 20px 25px 10px whitesmoke;
+  box-shadow: 45px 45px 90px whitesmoke;
   margin-left: 50px;
   line-height: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   transform: scale(1);
   transition: transform 100ms;
 }
-#les_restos .element:hover {
+#les_restos .card:hover {
   transform: scale(1.05);
 }
 #les_restos h3, #les_restos p {
   padding-left: 40px;
-}
-#les_restos i {
-  background: #792fd3;
 }
 #les_restos i:hover {
   background: #792fd3;
@@ -147,6 +143,7 @@ header {
   justify-content: space-between;
   align-items: baseline;
   padding-right: 40px;
+  background-color: white;
 }
 
 .banniere_menu img {
@@ -158,6 +155,7 @@ header {
   transform: translateY(-150px);
   border-radius: 80px 80px 0px 0px;
   padding: 30px;
+  padding-bottom: 90px;
 }
 
 .les_elements {
@@ -170,7 +168,7 @@ header {
   background-color: white;
   border: 0px solid white;
   border-radius: 50px/50px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 20px;
   line-height: 0px;
   font-size: 45px;
@@ -190,7 +188,7 @@ footer {
   background-color: #363434;
   color: white;
   padding-left: 70px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 footer a {

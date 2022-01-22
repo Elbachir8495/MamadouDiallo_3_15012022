@@ -107,16 +107,15 @@ header{
         color: black;
     }
     
-    .element{
+    .card{
         width: 90%;
         height: 600px;
-        margin: auto;
         border-radius: 40px 40px 40px 40px; 
         overflow: hidden;
-        box-shadow: 20px 25px 10px whitesmoke;
+        box-shadow: 45px 45px 90px whitesmoke;
         margin-left: 50px;
         line-height: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         transform: scale(1);
         transition: transform 100ms;
         &:hover{
@@ -127,13 +126,14 @@ header{
         padding-left: 40px;
     }
     i{
-        background: #792fd3;
+        
     }
     
     i:hover{
         background:#792fd3;
         color: #792fd3;
     }
+
     .card_image{
        height: 400px;
     }
@@ -146,6 +146,7 @@ header{
         justify-content:space-between;
         align-items: baseline;
         padding-right: 40px;
+        background-color: white;
     }
 }
 .banniere_menu img{
@@ -156,6 +157,7 @@ header{
     transform:translateY(-150px);
     border-radius: 80px 80px 0px 0px;
     padding: 30px;
+    padding-bottom: 90px;
 }
 .les_elements{
     display: flex;
@@ -166,7 +168,7 @@ header{
     background-color: white;
     border: 0px solid white;
     border-radius: 50px/50px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     padding: 20px;
     line-height: 0px;
     font-size: 45px;
@@ -183,7 +185,7 @@ footer{
     background-color: rgb(54, 52, 52);
     color: white;
     padding-left: 70px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
 
     a{
