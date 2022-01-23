@@ -53,6 +53,10 @@ header {
 .explorer h2 {
   font-size: 90px;
 }
+.explorer p {
+  font-size: 50px;
+  color: grey;
+}
 .explorer .btn {
   width: 70%;
   padding: 35px;
