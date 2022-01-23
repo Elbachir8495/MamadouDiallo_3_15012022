@@ -1,21 +1,30 @@
 $color_primary:#9356DC;
 $color_secondary:#FF79DA;
 $color_tertiary: #99E2D0;
+
+@mixin card-shadow {
+    box-shadow: 45px 45px 90px whitesmoke;
+    
+}
+
 body{
-    font-size: 50px;
-    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
 }
 #blocpage{
     width: 100%;
     margin: auto;
     background-color: linear;
+    
 }
 header{
     width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 10px;
-    background-color:white;
+    background:white;
+    font-family: 'Shrikhand', cursive;
+    font-size: 50px;
 }
 .heading_menu{
     display: flex;
@@ -35,7 +44,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    background-color:rgba(218, 214, 212, 0.534);
+    background: rgba(218, 214, 212, 0.534);
     width: 100%;
  i{
     margin-right: 30px;
@@ -55,8 +64,8 @@ header{
         padding: 35px;
         margin: auto;
         color: white;
-        font-size: 60px;
-        background: #792fd3;
+        font-size: 50px;
+        background: linear-gradient(#f071f0, #a329a3 );
         border-radius: 70px/70px;
         box-shadow: 10px 25px;
         
@@ -94,6 +103,7 @@ header{
         padding-left: 30px;
         padding-right: 30px;
     }
+   
     .btn:hover{
         background-color: #efe7fa;
     }
@@ -127,16 +137,17 @@ header{
             transform: scale(1.05);
         }
     }
-    .btn_new{
+    .btn_nouveau{
         background-color:$color_tertiary;
         border: solid $color_tertiary;
+        color: green;
         position: absolute;
         font-size: 50px;
         width: auto;
         text-align: justify;
         padding: 30px;
         margin: 40px;
-        transform: translateX(650px);
+        transform: translateX(200%);
     }
      h3,p{
         padding-left: 40px;
@@ -162,6 +173,7 @@ header{
         align-items: baseline;
         padding-right: 40px;
         background-color: white;
+        height: 100%;
     }
 }
 .banniere_menu img{
@@ -173,35 +185,70 @@ header{
     border-radius: 80px 80px 0px 0px;
     padding: 30px;
     padding-bottom: 90px;
+
+    .le_menu h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 60px;
+    }
+    .les_elements{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+        align-items: baseline;
+    }
+    
+    .element{
+        background-color: white;
+        border: 0px solid white;
+        border-radius: 50px/50px;
+        margin-bottom: 60px;
+        padding: 20px;
+        line-height: 0px;
+        font-size: 40px;
+        font-family: Roboto, sans-serif;
+        height: 180px;
+    }
+    .element h3{
+        font-size: 50px;
+        font-family:Roboto, sans-serif;
+    }
+    .element span{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        color: grey;
+    }
+    .btn{
+        width: 50%;
+        padding: 35px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        background: linear-gradient(#f071f0, #a329a3 );
+        border-radius: 70px/70px;
+        
+    }
+    
 }
-.les_elements{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.element{
-    background-color: white;
-    border: 0px solid white;
-    border-radius: 50px/50px;
-    margin-bottom: 60px;
-    padding: 20px;
-    line-height: 0px;
-    font-size: 45px;
-}
-.element h3{
-    font-size: 50px;
-}
-.element span{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
+
+
+
 footer{
     background-color: rgb(54, 52, 52);
     color: white;
     padding-left: 70px;
     padding-top: 30px;
     padding-bottom: 30px;
+  
+
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 40px;
+    }
+    p{
+        font-size: 26px;
+    }
 
     a{
         color: white;

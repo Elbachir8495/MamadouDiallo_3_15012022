@@ -1,6 +1,6 @@
 body {
-  font-size: 50px;
-  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
 }
 
 #blocpage {
@@ -14,7 +14,9 @@ header {
   margin: auto;
   text-align: center;
   padding-top: 10px;
-  background-color: white;
+  background: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
 }
 
 .heading_menu {
@@ -34,7 +36,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  background-color: rgba(218, 214, 212, 0.534);
+  background: rgba(218, 214, 212, 0.534);
   width: 100%;
 }
 .btn_localisation i {
@@ -56,8 +58,8 @@ header {
   padding: 35px;
   margin: auto;
   color: white;
-  font-size: 60px;
-  background: #792fd3;
+  font-size: 50px;
+  background: linear-gradient(#f071f0, #a329a3);
   border-radius: 70px/70px;
   box-shadow: 10px 25px;
 }
@@ -125,16 +127,17 @@ header {
 #les_restos .card:hover {
   transform: scale(1.05);
 }
-#les_restos .btn_new {
+#les_restos .btn_nouveau {
   background-color: #99E2D0;
   border: solid #99E2D0;
+  color: green;
   position: absolute;
   font-size: 50px;
   width: auto;
   text-align: justify;
   padding: 30px;
   margin: 40px;
-  transform: translateX(650px);
+  transform: translateX(200%);
 }
 #les_restos h3, #les_restos p {
   padding-left: 40px;
@@ -157,6 +160,7 @@ header {
   align-items: baseline;
   padding-right: 40px;
   background-color: white;
+  height: 100%;
 }
 
 .banniere_menu img {
@@ -170,31 +174,46 @@ header {
   padding: 30px;
   padding-bottom: 90px;
 }
-
-.les_elements {
+.le_menu .le_menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 60px;
+}
+.le_menu .les_elements {
   display: flex;
   justify-content: space-between;
+  padding-right: 50px;
   align-items: baseline;
 }
-
-.element {
+.le_menu .element {
   background-color: white;
   border: 0px solid white;
   border-radius: 50px/50px;
   margin-bottom: 60px;
   padding: 20px;
   line-height: 0px;
-  font-size: 45px;
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  height: 180px;
 }
-
-.element h3 {
+.le_menu .element h3 {
   font-size: 50px;
+  font-family: Roboto, sans-serif;
 }
-
-.element span {
+.le_menu .element span {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  color: grey;
+}
+.le_menu .btn {
+  width: 50%;
+  padding: 35px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  background: linear-gradient(#f071f0, #a329a3);
+  border-radius: 70px/70px;
 }
 
 footer {
@@ -203,6 +222,13 @@ footer {
   padding-left: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 40px;
+}
+footer p {
+  font-size: 26px;
 }
 footer a {
   color: white;
