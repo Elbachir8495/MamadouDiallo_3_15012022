@@ -26,6 +26,30 @@ header{
     font-family: 'Shrikhand', cursive;
     font-size: 50px;
 }
+.chargement{
+    border: 15px solid #f3f3f3;
+    border-top: 15px solid $color_secondary;
+    border-bottom: 15px solid $color_tertiary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+   
+    -webkit-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    position: absolute;
+    left: 0; top: 0; bottom: 0; right: 0;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
 .heading_menu{
     display: flex;
     align-items: baseline;
@@ -57,10 +81,15 @@ header{
     padding-bottom: 15px;
     height: 800px;
     h2{
-        font-size: 90px;
+        font-size: 60px;
+        padding-left: 60px;
+        padding-right: 50px;
     }
     p{
-        font-size: 50px;
+        font-size: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
         color: grey;
     }
     .btn{
@@ -98,8 +127,9 @@ header{
         background-color: $color_primary;
         text-align: center;
         width: 60px;
-        padding: 5px;
+        padding: 15px;
         color: white;
+        
     }
     i{
         position: relative;
@@ -156,9 +186,14 @@ header{
      h3,p{
         padding-left: 40px;
     }
+    
     i:hover{
-        background:#792fd3;
-        color: #792fd3;
+        background-image: linear-gradient(#f071f0, #a329a3 );
+        background-clip:content-box;
+        padding: 0px;
+        margin: 0px;
+       
+        
     }
 
     .card_image{
@@ -183,12 +218,19 @@ header{
 .banniere_menu img{
     width: 100%;
 }
+.bottom_vert{
+    padding-bottom: 20px;
+    border-bottom: 7px solid $color_tertiary;
+    width: 100px;
+}
 .le_menu{
     background: whitesmoke;
     transform:translateY(-150px);
     border-radius: 80px 80px 0px 0px;
     padding: 30px;
     padding-bottom: 90px;
+    height: auto;
+   
 
     h1{
         font-family: 'Shrikhand', cursive;
@@ -200,27 +242,68 @@ header{
         padding-right: 50px;
         align-items: baseline;
     }
-    
     .element{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: white;
         border: 0px solid white;
         border-radius: 50px/50px;
         margin-bottom: 60px;
         padding: 20px;
+        padding-right: 0;
         line-height: 0px;
         font-size: 40px;
         font-family: Roboto, sans-serif;
         height: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .element h3{
+       
+    .test{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        &:hover + .btn_essai{
+            transform:scaleX(1);
+        }   
+
+    }
+    .overflow-ellipsis{
+       
+         text-overflow: ellipsis;
+
+    }
+    .btn_essai{
+        background-color: $color_tertiary;
+        height: 180px;
+        border-radius: 0px 50px 50px 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 70px;
+        font-family: Roboto, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transform-origin: right 50%;
+        transform: scaleX(0);
+        transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+    }
+    .test h3{
         font-size: 50px;
         font-family:Roboto, sans-serif;
     }
-    .element span{
+    .test span{
         display: flex;
         justify-content: space-between;
-        margin: auto;
+        width: 100%;
+        
         color: grey;
+        
     }
     .btn{
         width: 50%;

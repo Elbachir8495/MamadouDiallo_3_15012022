@@ -19,6 +19,40 @@ header {
   font-size: 50px;
 }
 
+.chargement {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #FF79DA;
+  border-bottom: 15px solid #99E2D0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .heading_menu {
   display: flex;
   align-items: baseline;
@@ -51,10 +85,15 @@ header {
   height: 800px;
 }
 .explorer h2 {
-  font-size: 90px;
+  font-size: 60px;
+  padding-left: 60px;
+  padding-right: 50px;
 }
 .explorer p {
-  font-size: 50px;
+  font-size: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
   color: grey;
 }
 .explorer .btn {
@@ -91,7 +130,7 @@ header {
   background-color: #9356DC;
   text-align: center;
   width: 60px;
-  padding: 5px;
+  padding: 15px;
   color: white;
 }
 #fonctionnement i {
@@ -147,8 +186,10 @@ header {
   padding-left: 40px;
 }
 #les_restos i:hover {
-  background: #792fd3;
-  color: #792fd3;
+  background-image: linear-gradient(#f071f0, #a329a3);
+  background-clip: content-box;
+  padding: 0px;
+  margin: 0px;
 }
 #les_restos .card_image {
   height: 400px;
@@ -171,12 +212,19 @@ header {
   width: 100%;
 }
 
+.bottom_vert {
+  padding-bottom: 20px;
+  border-bottom: 7px solid #99E2D0;
+  width: 100px;
+}
+
 .le_menu {
   background: whitesmoke;
   transform: translateY(-150px);
   border-radius: 80px 80px 0px 0px;
   padding: 30px;
   padding-bottom: 90px;
+  height: auto;
 }
 .le_menu h1 {
   font-family: "Shrikhand", cursive;
@@ -189,24 +237,60 @@ header {
   align-items: baseline;
 }
 .le_menu .element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   border: 0px solid white;
   border-radius: 50px/50px;
   margin-bottom: 60px;
   padding: 20px;
+  padding-right: 0;
   line-height: 0px;
   font-size: 40px;
   font-family: Roboto, sans-serif;
   height: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.le_menu .element h3 {
+.le_menu .test {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.le_menu .test:hover + .btn_essai {
+  transform: scaleX(1);
+}
+.le_menu .overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+.le_menu .btn_essai {
+  background-color: #99E2D0;
+  height: 180px;
+  border-radius: 0px 50px 50px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 70px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform-origin: right 50%;
+  transform: scaleX(0);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+}
+.le_menu .test h3 {
   font-size: 50px;
   font-family: Roboto, sans-serif;
 }
-.le_menu .element span {
+.le_menu .test span {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  width: 100%;
   color: grey;
 }
 .le_menu .btn {
