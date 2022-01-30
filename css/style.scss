@@ -307,10 +307,11 @@ header{
     }
     .btn span{
         display: flex;
-        justify-content: space-between;
         width: 100%;
-        
         color: grey;
+        p{
+            margin-right: 70px;
+        }
         
     }
     .btn_violet{

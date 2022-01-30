@@ -297,9 +297,11 @@ header {
 }
 .le_menu .btn span {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   color: grey;
+}
+.le_menu .btn span p {
+  margin-right: 70px;
 }
 .le_menu .btn_violet {
   width: 50%;

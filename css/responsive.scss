@@ -96,6 +96,22 @@
         }
        
     }
+    
+    .le_menu{
+    
+        .element{
+            width: 60%;
+            font-size: 20px;
+           margin: 60px auto;
+            height: 80px;
+        }
+        .btn{
+            h3{
+                font-size: 30px;
+            }
+        }
+        
+    }
     .footer_items{
         display: flex;
         
@@ -104,17 +120,6 @@
         font-size: 20px;
         margin-right: 80px;
        }
-        
-    }
-    .le_menu{
-        flex-direction: column;
-        
-    
-        .element{
-            width: 70%;
-            margin: auto;
-           
-        }
         
     }
     
