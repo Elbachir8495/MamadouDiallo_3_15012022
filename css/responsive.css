@@ -1,8 +1,171 @@
-@media  screen and(max-width:992px)  {
-    #blocpage{
-        width: 100%;
-        margin: auto;
-        max-width: 1460px;
-    }
-    
+@media screen and (min-width: 992px) {
+  #blocpage {
+    width: 100%;
+    margin: auto;
+    max-width: 1460px;
+  }
+
+  .explorer {
+    background-color: white;
+    height: 300px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  .explorer h2 {
+    font-size: 40px;
+    padding-left: 20px;
+  }
+  .explorer p {
+    font-size: 25px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+  .explorer .btn {
+    padding: 20px;
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  #fonctionnement h1 {
+    font-size: 30px;
+  }
+  #fonctionnement .btn {
+    width: 450px;
+    font-size: 25px;
+  }
+  #fonctionnement .number {
+    font-size: 20px;
+    width: 25px;
+    padding: 10px;
+  }
+  #fonctionnement i {
+    font-size: 25px;
+  }
+
+  #les_restos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 800px;
+  }
+  #les_restos h2 {
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 30px;
+  }
+  #les_restos .tous_les_card {
+    width: 100%;
+    height: 810px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #les_restos .tous_les_card .card {
+    width: 40%;
+    height: 320px;
+    border-radius: 20px;
+    margin: auto;
+  }
+  #les_restos .tous_les_card .card_image {
+    height: 200px;
+  }
+  #les_restos .tous_les_card .card_image img {
+    width: 100%;
+    height: 100%;
+  }
+  #les_restos .tous_les_card .card_body {
+    height: 100%;
+    font-size: 30px;
+  }
+  #les_restos .tous_les_card h3 {
+    font-size: 30px;
+  }
+  #les_restos .tous_les_card p {
+    font-size: 20px;
+  }
+  #les_restos .tous_les_card .btn_nouveau {
+    transform: translateX(200%);
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .footer_items {
+    display: flex;
+    margin: auto;
+  }
+  .footer_items p {
+    font-size: 20px;
+    margin-right: 80px;
+  }
+
+  .le_menu {
+    flex-direction: column;
+  }
+  .le_menu .element {
+    width: 70%;
+    margin: auto;
+  }
 }
+@media screen and (min-device-width: 767px) and (max-device-width: 991px) {
+  #blocpage {
+    width: 100%;
+    margin: auto;
+  }
+
+  #les_restos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 800px;
+  }
+  #les_restos h2 {
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 30px;
+  }
+  #les_restos .tous_les_card {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #les_restos .tous_les_card .card {
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+  }
+  #les_restos .tous_les_card .card_image {
+    height: 200px;
+  }
+  #les_restos .tous_les_card .card_image img {
+    width: 100%;
+    height: 100%;
+  }
+  #les_restos .tous_les_card .card_body {
+    height: 100%;
+    font-size: 30px;
+  }
+  #les_restos .tous_les_card h3 {
+    font-size: 30px;
+  }
+  #les_restos .tous_les_card p {
+    font-size: 20px;
+  }
+  #les_restos .tous_les_card .btn_nouveau {
+    transform: translateX(200%);
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .footer_items {
+    display: flex;
+    margin: auto;
+  }
+  .footer_items p {
+    font-size: 20px;
+    margin-right: 80px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

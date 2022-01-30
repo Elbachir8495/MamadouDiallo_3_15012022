@@ -1,3 +1,4 @@
+
 $color_primary:#9356DC;
 $color_secondary:#FF79DA;
 $color_tertiary: #99E2D0;
@@ -126,7 +127,7 @@ header{
         border-radius: 50px/50px;
         background-color: $color_primary;
         text-align: center;
-        width: 60px;
+        width: 50px;
         padding: 15px;
         color: white;
         
@@ -145,7 +146,6 @@ header{
 #les_restos{
     background-color: whitesmoke;
     padding-bottom: 70px;
-  
 
     h2{
         padding-left: 60px;
@@ -162,7 +162,7 @@ header{
         border-radius: 40px 40px 40px 40px; 
         overflow: hidden;
         box-shadow: 45px 45px 90px whitesmoke;
-        margin-left: 50px;
+        margin-left: 60px;
         line-height: 20px;
         margin-bottom: 60px;
         transform: scale(1);
@@ -179,14 +179,22 @@ header{
         font-size: 50px;
         width: auto;
         text-align: justify;
-        padding: 30px;
+        padding: 20px;
         margin: 40px;
         transform: translateX(200%);
     }
-     h3,p{
+     h3{
         padding-left: 40px;
+        font-size: 50px;
     }
-    
+    p{
+        padding-left: 40px;
+        font-size: 40px;
+        
+    }
+    i{
+        font-size: 40px;
+    }
     i:hover{
         background-image: linear-gradient(#f071f0, #a329a3 );
         background-clip:content-box;
@@ -197,7 +205,7 @@ header{
     }
 
     .card_image{
-       height: 400px;
+        height: 400px;
        position: relative;
        
     }
@@ -261,11 +269,11 @@ header{
         text-overflow: ellipsis;
     }
        
-    .test{
+    .btn{
         width: auto;
         display: flex;
         flex-direction: column;
-        &:hover + .btn_essai{
+        &:hover + .btn_vert{
             transform:scaleX(1);
         }   
 
@@ -275,7 +283,7 @@ header{
          text-overflow: ellipsis;
 
     }
-    .btn_essai{
+    .btn_vert{
         background-color: $color_tertiary;
         height: 180px;
         border-radius: 0px 50px 50px 0px;
@@ -293,11 +301,11 @@ header{
         transform: scaleX(0);
         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
     }
-    .test h3{
+    .btn h3{
         font-size: 50px;
         font-family:Roboto, sans-serif;
     }
-    .test span{
+    .btn span{
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -305,7 +313,7 @@ header{
         color: grey;
         
     }
-    .btn{
+    .btn_violet{
         width: 50%;
         padding: 35px;
         margin: auto;
@@ -345,6 +353,7 @@ footer{
         color: cornflowerblue;
     }
 }
+
 
 
 

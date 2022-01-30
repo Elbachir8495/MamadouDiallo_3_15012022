@@ -129,7 +129,7 @@ header {
   border-radius: 50px/50px;
   background-color: #9356DC;
   text-align: center;
-  width: 60px;
+  width: 50px;
   padding: 15px;
   color: white;
 }
@@ -161,7 +161,7 @@ header {
   border-radius: 40px 40px 40px 40px;
   overflow: hidden;
   box-shadow: 45px 45px 90px whitesmoke;
-  margin-left: 50px;
+  margin-left: 60px;
   line-height: 20px;
   margin-bottom: 60px;
   transform: scale(1);
@@ -178,12 +178,20 @@ header {
   font-size: 50px;
   width: auto;
   text-align: justify;
-  padding: 30px;
+  padding: 20px;
   margin: 40px;
   transform: translateX(200%);
 }
-#les_restos h3, #les_restos p {
+#les_restos h3 {
   padding-left: 40px;
+  font-size: 50px;
+}
+#les_restos p {
+  padding-left: 40px;
+  font-size: 40px;
+}
+#les_restos i {
+  font-size: 40px;
 }
 #les_restos i:hover {
   background-image: linear-gradient(#f071f0, #a329a3);
@@ -254,18 +262,18 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.le_menu .test {
+.le_menu .btn {
   width: auto;
   display: flex;
   flex-direction: column;
 }
-.le_menu .test:hover + .btn_essai {
+.le_menu .btn:hover + .btn_vert {
   transform: scaleX(1);
 }
 .le_menu .overflow-ellipsis {
   text-overflow: ellipsis;
 }
-.le_menu .btn_essai {
+.le_menu .btn_vert {
   background-color: #99E2D0;
   height: 180px;
   border-radius: 0px 50px 50px 0px;
@@ -283,17 +291,17 @@ header {
   transform: scaleX(0);
   transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
 }
-.le_menu .test h3 {
+.le_menu .btn h3 {
   font-size: 50px;
   font-family: Roboto, sans-serif;
 }
-.le_menu .test span {
+.le_menu .btn span {
   display: flex;
   justify-content: space-between;
   width: 100%;
   color: grey;
 }
-.le_menu .btn {
+.le_menu .btn_violet {
   width: 50%;
   padding: 35px;
   margin: auto;

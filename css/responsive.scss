@@ -1,0 +1,192 @@
+@media screen and(min-width:992px) {
+    #blocpage{
+        width: 100%;
+        margin: auto;
+        max-width: 1460px;
+    }
+    .explorer{
+        background-color: white;
+        height: 300px;
+        padding-bottom: 20px;
+        text-align: left;
+        h2{
+            font-size: 40px;
+            padding-left: 20px;
+        }
+        p{
+            font-size: 25px;
+            padding-bottom: 0;
+            padding-left: 20px;
+        }
+        .btn{
+            padding: 20px;
+            font-size: 30px;
+             width: 40%;
+             text-align: center;
+             margin: 0;
+             margin-left: 20px;
+             
+        }
+    }
+    #fonctionnement{
+        h1{
+            font-size: 30px;
+            
+        }
+        .btn{
+            width: 450px;
+            font-size: 25px;
+            
+        }
+        .number{
+            font-size: 20px;
+            width: 25px;
+            padding: 10px;
+        }
+        i{
+            font-size: 25px;
+        }
+    }
+
+    #les_restos{
+        display: flex;
+        flex-direction: column;   
+        margin: auto;
+        height: 800px;
+        h2{
+            padding-top: 30px;
+            padding-left: 40px;
+            font-size: 30px;
+        }
+
+        .tous_les_card{
+            width: 100%;
+            height: 810px;
+            display: flex; 
+            flex-wrap: wrap;
+
+            .card{
+                width: 40%;
+                height: 320px;
+                border-radius: 20px;
+                margin: auto;
+            }
+            .card_image{
+                height: 200px;
+            }
+            .card_image img{
+                width: 100%;
+                height: 100%;
+            }
+            .card_body{
+             height: 100%;
+             font-size: 30px;
+         }
+         h3{
+             font-size: 30px;
+         }
+         p{
+             font-size: 20px;
+         }
+         .btn_nouveau{
+            transform: translateX(200%);
+            padding: 10px;
+            font-size: 20px;
+         }
+        }
+       
+    }
+    .footer_items{
+        display: flex;
+        
+        margin: auto;
+       p{
+        font-size: 20px;
+        margin-right: 80px;
+       }
+        
+    }
+    .le_menu{
+        flex-direction: column;
+        
+    
+        .element{
+            width: 70%;
+            margin: auto;
+           
+        }
+        
+    }
+    
+}
+
+
+@media screen  and(min-device-width:767px) and(max-device-width:991px) {
+    #blocpage{
+        width: 100%;
+        margin: auto;
+    }
+    
+    #les_restos{
+        display: flex;
+        flex-direction: column;   
+        margin: auto;
+        height: 800px;
+        h2{
+            padding-top: 30px;
+            padding-left: 40px;
+            font-size: 30px;
+        }
+
+        .tous_les_card{
+            width: 100%;
+            height: 800px;
+            display: flex; 
+            flex-wrap: wrap;
+
+            .card{
+                width: 40%;
+                height: 300px;
+                border-radius: 20px;
+                margin: auto;
+            }
+            .card_image{
+                height: 200px;
+            }
+            .card_image img{
+                width: 100%;
+                height: 100%;
+            }
+            .card_body{
+             height: 100%;
+             font-size: 30px;
+         }
+         h3{
+             font-size: 30px;
+         }
+         p{
+             font-size: 20px;
+         }
+         .btn_nouveau{
+            transform: translateX(200%);
+            padding: 10px;
+            font-size: 20px;
+         }
+        }
+       
+    }
+    .footer_items{
+        display: flex;
+        
+        margin: auto;
+       p{
+        font-size: 20px;
+        margin-right: 80px;
+       }
+        
+    }
+}
+
+
+
+
