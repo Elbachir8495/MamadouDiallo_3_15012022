@@ -1,4 +1,3 @@
-
 $color_primary:#9356DC;
 $color_secondary:#FF79DA;
 $color_tertiary: #99E2D0;
@@ -27,30 +26,51 @@ header{
     font-family: 'Shrikhand', cursive;
     font-size: 50px;
 }
-.chargement{
-    border: 15px solid #f3f3f3;
-    border-top: 15px solid $color_secondary;
-    border-bottom: 15px solid $color_tertiary;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-   
-    -webkit-animation: spin 2s linear infinite;
-    -o-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-    margin: auto;
-    position: absolute;
-    left: 0; top: 0; bottom: 0; right: 0;
-}
-@keyframes spin {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 1000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+    &__item {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+      animation: jump 1s;
+      animation-iteration-count: 1s;
+  
+      &Container {
+        display: flex;
+        width: 5rem;
+        justify-content: space-between;
+      }
+  
+      &--1 {
+        background-color: $color-primary;
+      }
     
-}
+      &--2 {
+        background-color: $color-secondary;
+        animation-delay: 0.5s;
+      }
+    
+      &--3 {
+        background-color: $color-tertiary;
+        animation-delay: 0.75s;
+      }
+    }
+  }
+
+
 .heading_menu{
     display: flex;
     align-items: baseline;
@@ -127,7 +147,7 @@ header{
         border-radius: 50px/50px;
         background-color: $color_primary;
         text-align: center;
-        width: 50px;
+        width: 60px;
         padding: 15px;
         color: white;
         
@@ -146,6 +166,7 @@ header{
 #les_restos{
     background-color: whitesmoke;
     padding-bottom: 70px;
+  
 
     h2{
         padding-left: 60px;
@@ -162,7 +183,7 @@ header{
         border-radius: 40px 40px 40px 40px; 
         overflow: hidden;
         box-shadow: 45px 45px 90px whitesmoke;
-        margin-left: 60px;
+        margin-left: 50px;
         line-height: 20px;
         margin-bottom: 60px;
         transform: scale(1);
@@ -179,22 +200,14 @@ header{
         font-size: 50px;
         width: auto;
         text-align: justify;
-        padding: 20px;
+        padding: 30px;
         margin: 40px;
         transform: translateX(200%);
     }
-     h3{
+     h3,p{
         padding-left: 40px;
-        font-size: 50px;
     }
-    p{
-        padding-left: 40px;
-        font-size: 40px;
-        
-    }
-    i{
-        font-size: 40px;
-    }
+    
     i:hover{
         background-image: linear-gradient(#f071f0, #a329a3 );
         background-clip:content-box;
@@ -205,7 +218,7 @@ header{
     }
 
     .card_image{
-        height: 400px;
+       height: 400px;
        position: relative;
        
     }
@@ -269,11 +282,11 @@ header{
         text-overflow: ellipsis;
     }
        
-    .btn{
+    .btn_vert{
         width: auto;
         display: flex;
         flex-direction: column;
-        &:hover + .btn_vert{
+        &:hover + .btn_essai{
             transform:scaleX(1);
         }   
 
@@ -283,7 +296,7 @@ header{
          text-overflow: ellipsis;
 
     }
-    .btn_vert{
+    .btn{
         background-color: $color_tertiary;
         height: 180px;
         border-radius: 0px 50px 50px 0px;
@@ -307,11 +320,10 @@ header{
     }
     .btn span{
         display: flex;
+        justify-content: space-between;
         width: 100%;
+        
         color: grey;
-        p{
-            margin-right: 70px;
-        }
         
     }
     .btn_violet{
@@ -354,7 +366,6 @@ footer{
         color: cornflowerblue;
     }
 }
-
 
 
 
