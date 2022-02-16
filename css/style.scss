@@ -231,8 +231,6 @@ header{
         height: 100%;
         @include btn_coeur;
    }
-   
-
 }
 .banniere_menu img{
     width: 100%;
@@ -242,34 +240,7 @@ header{
     border-bottom: 7px solid $color_tertiary;
     width: 100px;
 }
-@keyframes appear-card {
-    0%{
 
-        opacity: 0;
-        margin-top: 25px;
-    }
-    20%{
-        opacity: 0.1;
-        margin-top: 15px;
-    }
-    40%{
-        opacity: 0.2;
-       
-    }
-    60%{
-        opacity: 0.6;
-        
-    }
-    80%{
-        opacity: 0.8;
-        
-    }
-    100%{
-        opacity: 1;
-        
-    }
-    
-}
 .le_menu{
     background: whitesmoke;
     transform:translateY(-150px);
@@ -278,8 +249,36 @@ header{
     padding-bottom: 90px;
     height: auto;
     animation: appear-card 3000ms;
-    animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
     
+    @keyframes appear-card {
+        0%{
+    
+            opacity: 0;
+            margin-top: 25px;
+        }
+        20%{
+            opacity: 0.1;
+            margin-top: 15px;
+        }
+        40%{
+            opacity: 0.2;
+           
+        }
+        60%{
+            opacity: 0.6;
+            
+        }
+        80%{
+            opacity: 0.8;
+            
+        }
+        100%{
+            opacity: 1;
+            
+        }
+        
+    }
 
 
     h1{
@@ -294,13 +293,9 @@ header{
         
         @include btn_coeur;
     }
-
-    
-
-
     .element{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         background-color: white;
         border: 0px solid white;
@@ -314,38 +309,69 @@ header{
         overflow: hidden;
         width: 100%;
         
+        
+        .btn{
+            width: 80%;
+        }
+        .prix{
+            width: 20%;
+        }
+        
+        &:hover > .btn_vert{
+            width: 80px;
+            & i{
+                animation: rotate-check 1000ms;
+                
+            }
+        }
 
         .btn_vert{
             background-color:  #99E2D0;
             height: 180px;
-           
+           width: 0px;
             border-radius: 0px 50px 50px 0px;
-            padding-top: 70px;
-            padding-bottom: 70px;
-            padding-left: 20px;
-            padding-right: 20px;
             font-size: 50px;
             font-family: Roboto, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: all 1s;
+            background-color:$color-tertiary;
+        & i{
+            display: block;
+            transition: transform 1000ms;
+            transition-delay: 250ms;
+            transform: rotate(0deg);
+            font-size: 30px;
+            color:white
+        }
+        
             
             h3{
                 font-size: 100px;
                 font-family:Roboto, sans-serif; 
             }
-            span {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                color: grey; 
-            }
-            i{
-                color: white;
-            }
+            
         }
 
     }   
+    @keyframes rotate-check{
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+    
+    
+        90% {
+            transform: rotate(360deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
         
     .btn_violet{

@@ -230,6 +230,18 @@ header {
   width: 100px;
 }
 
+.le_menu {
+  background: whitesmoke;
+  transform: translateY(-150px);
+  border-radius: 80px 80px 0px 0px;
+  padding: 30px;
+  padding-bottom: 90px;
+  height: auto;
+  -webkit-animation: appear-card 3000ms;
+          animation: appear-card 3000ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
 @-webkit-keyframes appear-card {
   0% {
     opacity: 0;
@@ -252,7 +264,6 @@ header {
     opacity: 1;
   }
 }
-
 @keyframes appear-card {
   0% {
     opacity: 0;
@@ -274,18 +285,6 @@ header {
   100% {
     opacity: 1;
   }
-}
-.le_menu {
-  background: whitesmoke;
-  transform: translateY(-150px);
-  border-radius: 80px 80px 0px 0px;
-  padding: 30px;
-  padding-bottom: 90px;
-  height: auto;
-  -webkit-animation: appear-card 3000ms;
-          animation: appear-card 3000ms;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 .le_menu h1 {
   font-family: "Shrikhand", cursive;
@@ -313,7 +312,7 @@ header {
 }
 .le_menu .element {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   background-color: white;
   border: 0px solid white;
@@ -327,32 +326,71 @@ header {
   overflow: hidden;
   width: 100%;
 }
+.le_menu .element .btn {
+  width: 80%;
+}
+.le_menu .element .prix {
+  width: 20%;
+}
+.le_menu .element:hover > .btn_vert {
+  width: 80px;
+}
+.le_menu .element:hover > .btn_vert i {
+  -webkit-animation: rotate-check 1000ms;
+          animation: rotate-check 1000ms;
+}
 .le_menu .element .btn_vert {
   background-color: #99E2D0;
   height: 180px;
+  width: 0px;
   border-radius: 0px 50px 50px 0px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: 50px;
   font-family: Roboto, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  background-color: #99E2D0;
+}
+.le_menu .element .btn_vert i {
+  display: block;
+  transition: transform 1000ms;
+  transition-delay: 250ms;
+  transform: rotate(0deg);
+  font-size: 30px;
+  color: white;
 }
 .le_menu .element .btn_vert h3 {
   font-size: 100px;
   font-family: Roboto, sans-serif;
 }
-.le_menu .element .btn_vert span {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: grey;
+@-webkit-keyframes rotate-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.le_menu .element .btn_vert i {
-  color: white;
+@keyframes rotate-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .btn_violet {
