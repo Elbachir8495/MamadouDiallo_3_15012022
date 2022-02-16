@@ -2,14 +2,14 @@
   #blocpage {
     width: 100%;
     margin: auto;
-    max-width: 1460px;
+    max-width: 2560px;
   }
 
   .explorer {
     background-color: white;
     height: 300px;
     padding-bottom: 20px;
-    text-align: left;
+    text-align: center;
   }
   .explorer h2 {
     font-size: 40px;
@@ -21,28 +21,36 @@
     padding-left: 20px;
   }
   .explorer .btn {
-    padding: 20px;
-    font-size: 30px;
-    width: 40%;
-    text-align: center;
-    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    width: 20%;
     margin-left: 20px;
   }
 
+  #fonctionnement {
+    display: flex;
+    flex-direction: column;
+  }
   #fonctionnement h1 {
     font-size: 30px;
   }
+  #fonctionnement .les_btns {
+    display: flex;
+    justify-content: space-between;
+  }
   #fonctionnement .btn {
-    width: 450px;
-    font-size: 25px;
+    font-size: 20px;
+    width: 470px;
+    padding-left: 0;
   }
   #fonctionnement .number {
-    font-size: 20px;
-    width: 25px;
+    font-size: 15px;
+    width: 20px;
     padding: 10px;
   }
   #fonctionnement i {
-    font-size: 25px;
+    font-size: 20px;
+    padding-left: 10px;
   }
 
   #les_restos {
@@ -86,19 +94,23 @@
     font-size: 20px;
   }
   #les_restos .tous_les_card .btn_nouveau {
-    transform: translateX(200%);
+    transform: translateX(300%);
     padding: 10px;
     font-size: 20px;
   }
 
+  .le_menu .tous_menus {
+    display: flex;
+    font-size: 20px;
+  }
+  .le_menu h3 {
+    font-size: 20px;
+  }
   .le_menu .element {
-    width: 60%;
+    width: 90%;
     font-size: 20px;
     margin: 60px auto;
-    height: 80px;
-  }
-  .le_menu .btn h3 {
-    font-size: 30px;
+    height: 50px;
   }
 
   .footer_items {
