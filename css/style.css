@@ -87,7 +87,7 @@ header {
   background-color: whitesmoke;
   padding-top: 5px;
   padding-bottom: 15px;
-  height: 800px;
+  height: 700px;
 }
 .explorer h2 {
   font-size: 60px;
@@ -104,23 +104,24 @@ header {
 .explorer .btn_explorer {
   width: 70%;
   text-decoration: none;
-  padding: 15px;
+  padding: 25px;
   margin: auto;
   color: white;
   font-size: 50px;
   background: linear-gradient(#f071f0, #a329a3);
   border-radius: 70px/70px;
-  box-shadow: 10px 25px;
+  box-shadow: 10px 25px whitesmoke;
 }
 .explorer .btn_explorer:hover {
   background: linear-gradient(to bottom, #fface8, #ae80e5);
 }
-.explorer #fonctionnement {
+
+#fonctionnement {
   padding-left: 40px;
   position: relative;
   margin-right: 30px;
 }
-.explorer #fonctionnement .btn {
+#fonctionnement .btn {
   display: flex;
   align-items: flex-start;
   margin-left: 40px;
@@ -131,7 +132,7 @@ header {
   padding-left: 40px;
   font-size: 50px;
 }
-.explorer #fonctionnement .number {
+#fonctionnement .number {
   position: absolute;
   border: 1px solid;
   border-radius: 50px/50px;
@@ -141,28 +142,29 @@ header {
   padding: 15px;
   color: white;
 }
-.explorer #fonctionnement i {
+#fonctionnement i {
   position: relative;
   font-size: 50px;
   padding-left: 30px;
   padding-right: 30px;
 }
-.explorer #fonctionnement .btn:hover {
+#fonctionnement .btn:hover {
   background-color: #efe7fa;
 }
-.explorer #les_restos {
+
+#les_restos {
   background-color: whitesmoke;
   padding-bottom: 70px;
 }
-.explorer #les_restos h2 {
+#les_restos h2 {
   padding-left: 60px;
   padding-top: 110px;
 }
-.explorer #les_restos a {
+#les_restos a {
   text-decoration: none;
   color: black;
 }
-.explorer #les_restos .card {
+#les_restos .card {
   width: 90%;
   height: 600px;
   border-radius: 40px 40px 40px 40px;
@@ -174,10 +176,10 @@ header {
   transform: scale(1);
   transition: transform 100ms;
 }
-.explorer #les_restos .card:hover {
+#les_restos .card:hover {
   transform: scale(1.05);
 }
-.explorer #les_restos .btn_nouveau {
+#les_restos .btn_nouveau {
   background-color: #99E2D0;
   border: solid #99E2D0;
   color: green;
@@ -189,22 +191,22 @@ header {
   margin: 40px;
   transform: translateX(330%);
 }
-.explorer #les_restos h3 {
+#les_restos h3 {
   padding-left: 40px;
   font-weight: bold;
 }
-.explorer #les_restos p {
+#les_restos p {
   padding-left: 40px;
 }
-.explorer #les_restos .card_image {
+#les_restos .card_image {
   height: 400px;
   position: relative;
 }
-.explorer #les_restos .card_image img {
+#les_restos .card_image img {
   width: 100%;
   height: 100%;
 }
-.explorer #les_restos .card_body {
+#les_restos .card_body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -213,11 +215,11 @@ header {
   background-color: white;
   height: 100%;
 }
-.explorer #les_restos .card_body .card-fas--disabled {
+#les_restos .card_body .card-fas--disabled {
   -webkit-text-stroke: 1px black;
   color: white;
 }
-.explorer #les_restos .card_body .card-fas--disabled:hover {
+#les_restos .card_body .card-fas--disabled:hover {
   -webkit-animation: progress-heart 1000ms;
           animation: progress-heart 1000ms;
   -webkit-text-stroke: 0px;
@@ -227,21 +229,27 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.explorer .banniere_menu img {
+#les_restos .card_body i {
+  font-size: 60px;
+}
+
+.banniere_menu img {
   width: 100%;
 }
-.explorer .bottom_vert {
+
+.bottom_vert {
   padding-bottom: 20px;
   border-bottom: 7px solid #99E2D0;
   width: 100px;
 }
-.explorer .le_menu {
+
+.le_menu {
   background: whitesmoke;
   transform: translateY(-150px);
+  transform: translateY(50px);
   border-radius: 80px 80px 0px 0px;
   padding: 30px;
   padding-bottom: 90px;
-  height: auto;
   -webkit-animation: appear-card 3000ms;
           animation: appear-card 3000ms;
   -webkit-animation-timing-function: ease-in-out;
@@ -291,21 +299,21 @@ header {
     opacity: 1;
   }
 }
-.explorer .le_menu h1 {
+.le_menu h1 {
   font-family: "Shrikhand", cursive;
   font-size: 70px;
 }
-.explorer .le_menu .les_elements {
+.le_menu .les_elements {
   display: flex;
   justify-content: space-between;
   padding-right: 50px;
   align-items: baseline;
 }
-.explorer .le_menu .les_elements .card-fas--disabled {
+.le_menu .les_elements .card-fas--disabled {
   -webkit-text-stroke: 1px black;
   color: white;
 }
-.explorer .le_menu .les_elements .card-fas--disabled:hover {
+.le_menu .les_elements .card-fas--disabled:hover {
   -webkit-animation: progress-heart 1000ms;
           animation: progress-heart 1000ms;
   -webkit-text-stroke: 0px;
@@ -315,7 +323,7 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.explorer .le_menu .element {
+.le_menu .element {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -331,7 +339,7 @@ header {
   overflow: hidden;
   width: 100%;
 }
-.explorer .le_menu .element .btn {
+.le_menu .element .btn {
   flex-direction: column;
   justify-content: center;
   width: 80%;
@@ -339,33 +347,31 @@ header {
   overflow: hidden;
   white-space: nowrap;
 }
-.explorer .le_menu .element .btn h3 {
+.le_menu .element .btn h3 {
   display: block;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
-.explorer .le_menu .element .btn p {
+.le_menu .element .btn p {
   display: block;
   text-overflow: ellipsis;
-  overflow: hidden;
   color: gray;
 }
-.explorer .le_menu .element .prix {
+.le_menu .element .prix {
   flex-direction: column;
   justify-content: center;
   width: 20%;
 }
-.explorer .le_menu .element .prix p {
+.le_menu .element .prix p {
   display: block;
 }
-.explorer .le_menu .element:hover > .btn_vert {
+.le_menu .element:hover > .btn_vert {
   width: 200px;
 }
-.explorer .le_menu .element:hover > .btn_vert i {
+.le_menu .element:hover > .btn_vert i {
   -webkit-animation: rotate-check 1000ms;
           animation: rotate-check 1000ms;
 }
-.explorer .le_menu .element .btn_vert {
+.le_menu .element .btn_vert {
   background-color: #99E2D0;
   height: 180px;
   width: 0px;
@@ -381,7 +387,7 @@ header {
   transition: all 1s;
   background-color: #99E2D0;
 }
-.explorer .le_menu .element .btn_vert i {
+.le_menu .element .btn_vert i {
   display: block;
   transition: transform 1000ms;
   transition-delay: 250ms;
@@ -389,7 +395,7 @@ header {
   font-size: 70px;
   color: white;
 }
-.explorer .le_menu .element .btn_vert h3 {
+.le_menu .element .btn_vert h3 {
   font-size: 100px;
   font-family: Roboto, sans-serif;
 }
@@ -421,7 +427,7 @@ header {
     transform: rotate(360deg);
   }
 }
-.explorer .btn_violet {
+.le_menu .btn_violet {
   width: 50%;
   padding: 35px;
   margin: auto;
@@ -430,6 +436,9 @@ header {
   font-size: 50px;
   background: linear-gradient(#f071f0, #a329a3);
   border-radius: 70px/70px;
+}
+.le_menu .btn_violet:hover {
+  background: linear-gradient(to bottom, #fface8, #ae80e5);
 }
 
 footer {
