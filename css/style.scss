@@ -56,6 +56,7 @@ header{
         -webkit-animation: spin 2s;
         -o-animation: spin 2s;
         animation: spin 2s;
+        opacity: 0;
         margin: auto;
         position: absolute;
         left: 0; top: 0; bottom: 0; right: 0;
@@ -114,17 +115,21 @@ header{
         padding-bottom: 60px;
         color: grey;
     }
-    .btn{
+    .btn_explorer{
         width: 70%;
-        padding: 35px;
+        text-decoration: none;
+        padding: 15px;
         margin: auto;
         color: white;
         font-size: 50px;
         background: linear-gradient(#f071f0, #a329a3 );
         border-radius: 70px/70px;
         box-shadow: 10px 25px;
-        
-    }
+        &:hover{
+            background: -moz-linear-gradient(top, lighten($color_secondary,10%), lighten($color_primary,10%) );
+            background: -webkit-linear-gradient(top, lighten($color_secondary,10%), lighten($color_primary,10%) );
+            background: linear-gradient(to bottom, lighten($color_secondary,10%) , lighten($color_primary,10%) );
+       }
 }
 #fonctionnement{
     padding-left: 40px;
@@ -205,13 +210,13 @@ header{
         margin: 40px;
         transform: translateX(330%);
     }
-     h3,p{
+     h3{
+        padding-left: 40px;
+        font-weight: bold;
+    }
+    p{
         padding-left: 40px;
     }
-    
-
-    
-    
     .card_image{
        height: 400px;
        position: relative;
@@ -224,6 +229,7 @@ header{
     }
     .card_body{
         display: flex;
+        flex-direction: row;
         justify-content:space-between;
         align-items: baseline;
         padding-right: 40px;
@@ -311,28 +317,55 @@ header{
         
         
         .btn{
+            flex-direction: column;
+            justify-content: center;
             width: 80%;
+            text-align: left;
+            overflow: hidden;
+            white-space: nowrap;
+            
+           
+            h3{
+                display: block;
+                text-overflow: ellipsis;
+               overflow: hidden;
+                
+            }
+            p{
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                color: gray;
+                
+            }
         }
         .prix{
+            flex-direction: column;
+            justify-content: center;
             width: 20%;
+            p{
+                display: block;
+            }
         }
         
         &:hover > .btn_vert{
-            width: 80px;
+            width: 200px;
             & i{
-                animation: rotate-check 1000ms;
-                
+                animation: rotate-check 1000ms; 
             }
         }
 
         .btn_vert{
             background-color:  #99E2D0;
             height: 180px;
-           width: 0px;
+            width: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             border-radius: 0px 50px 50px 0px;
             font-size: 50px;
             font-family: Roboto, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             transition: all 1s;
@@ -342,7 +375,7 @@ header{
             transition: transform 1000ms;
             transition-delay: 250ms;
             transform: rotate(0deg);
-            font-size: 30px;
+            font-size: 70px;
             color:white
         }
         
@@ -372,7 +405,7 @@ header{
             transform: rotate(360deg);
         }
     }
-}
+
         
     .btn_violet{
         width: 50%;
@@ -384,6 +417,7 @@ header{
         background: linear-gradient(#f071f0, #a329a3 );
         border-radius: 70px/70px;
     }
+}
 
 footer{
     background-color: rgb(54, 52, 52);

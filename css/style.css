@@ -28,6 +28,7 @@ header {
   height: 100px;
   -webkit-animation: spin 2s;
   animation: spin 2s;
+  opacity: 0;
   margin: auto;
   position: absolute;
   left: 0;
@@ -100,9 +101,10 @@ header {
   padding-bottom: 60px;
   color: grey;
 }
-.explorer .btn {
+.explorer .btn_explorer {
   width: 70%;
-  padding: 35px;
+  text-decoration: none;
+  padding: 15px;
   margin: auto;
   color: white;
   font-size: 50px;
@@ -110,13 +112,15 @@ header {
   border-radius: 70px/70px;
   box-shadow: 10px 25px;
 }
-
-#fonctionnement {
+.explorer .btn_explorer:hover {
+  background: linear-gradient(to bottom, #fface8, #ae80e5);
+}
+.explorer #fonctionnement {
   padding-left: 40px;
   position: relative;
   margin-right: 30px;
 }
-#fonctionnement .btn {
+.explorer #fonctionnement .btn {
   display: flex;
   align-items: flex-start;
   margin-left: 40px;
@@ -127,7 +131,7 @@ header {
   padding-left: 40px;
   font-size: 50px;
 }
-#fonctionnement .number {
+.explorer #fonctionnement .number {
   position: absolute;
   border: 1px solid;
   border-radius: 50px/50px;
@@ -137,29 +141,28 @@ header {
   padding: 15px;
   color: white;
 }
-#fonctionnement i {
+.explorer #fonctionnement i {
   position: relative;
   font-size: 50px;
   padding-left: 30px;
   padding-right: 30px;
 }
-#fonctionnement .btn:hover {
+.explorer #fonctionnement .btn:hover {
   background-color: #efe7fa;
 }
-
-#les_restos {
+.explorer #les_restos {
   background-color: whitesmoke;
   padding-bottom: 70px;
 }
-#les_restos h2 {
+.explorer #les_restos h2 {
   padding-left: 60px;
   padding-top: 110px;
 }
-#les_restos a {
+.explorer #les_restos a {
   text-decoration: none;
   color: black;
 }
-#les_restos .card {
+.explorer #les_restos .card {
   width: 90%;
   height: 600px;
   border-radius: 40px 40px 40px 40px;
@@ -171,10 +174,10 @@ header {
   transform: scale(1);
   transition: transform 100ms;
 }
-#les_restos .card:hover {
+.explorer #les_restos .card:hover {
   transform: scale(1.05);
 }
-#les_restos .btn_nouveau {
+.explorer #les_restos .btn_nouveau {
   background-color: #99E2D0;
   border: solid #99E2D0;
   color: green;
@@ -186,30 +189,35 @@ header {
   margin: 40px;
   transform: translateX(330%);
 }
-#les_restos h3, #les_restos p {
+.explorer #les_restos h3 {
+  padding-left: 40px;
+  font-weight: bold;
+}
+.explorer #les_restos p {
   padding-left: 40px;
 }
-#les_restos .card_image {
+.explorer #les_restos .card_image {
   height: 400px;
   position: relative;
 }
-#les_restos .card_image img {
+.explorer #les_restos .card_image img {
   width: 100%;
   height: 100%;
 }
-#les_restos .card_body {
+.explorer #les_restos .card_body {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   padding-right: 40px;
   background-color: white;
   height: 100%;
 }
-#les_restos .card_body .card-fas--disabled {
+.explorer #les_restos .card_body .card-fas--disabled {
   -webkit-text-stroke: 1px black;
   color: white;
 }
-#les_restos .card_body .card-fas--disabled:hover {
+.explorer #les_restos .card_body .card-fas--disabled:hover {
   -webkit-animation: progress-heart 1000ms;
           animation: progress-heart 1000ms;
   -webkit-text-stroke: 0px;
@@ -219,18 +227,15 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.banniere_menu img {
+.explorer .banniere_menu img {
   width: 100%;
 }
-
-.bottom_vert {
+.explorer .bottom_vert {
   padding-bottom: 20px;
   border-bottom: 7px solid #99E2D0;
   width: 100px;
 }
-
-.le_menu {
+.explorer .le_menu {
   background: whitesmoke;
   transform: translateY(-150px);
   border-radius: 80px 80px 0px 0px;
@@ -286,21 +291,21 @@ header {
     opacity: 1;
   }
 }
-.le_menu h1 {
+.explorer .le_menu h1 {
   font-family: "Shrikhand", cursive;
   font-size: 70px;
 }
-.le_menu .les_elements {
+.explorer .le_menu .les_elements {
   display: flex;
   justify-content: space-between;
   padding-right: 50px;
   align-items: baseline;
 }
-.le_menu .les_elements .card-fas--disabled {
+.explorer .le_menu .les_elements .card-fas--disabled {
   -webkit-text-stroke: 1px black;
   color: white;
 }
-.le_menu .les_elements .card-fas--disabled:hover {
+.explorer .le_menu .les_elements .card-fas--disabled:hover {
   -webkit-animation: progress-heart 1000ms;
           animation: progress-heart 1000ms;
   -webkit-text-stroke: 0px;
@@ -310,7 +315,7 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.le_menu .element {
+.explorer .le_menu .element {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -326,41 +331,65 @@ header {
   overflow: hidden;
   width: 100%;
 }
-.le_menu .element .btn {
+.explorer .le_menu .element .btn {
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.le_menu .element .prix {
+.explorer .le_menu .element .btn h3 {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.explorer .le_menu .element .btn p {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: gray;
+}
+.explorer .le_menu .element .prix {
+  flex-direction: column;
+  justify-content: center;
   width: 20%;
 }
-.le_menu .element:hover > .btn_vert {
-  width: 80px;
+.explorer .le_menu .element .prix p {
+  display: block;
 }
-.le_menu .element:hover > .btn_vert i {
+.explorer .le_menu .element:hover > .btn_vert {
+  width: 200px;
+}
+.explorer .le_menu .element:hover > .btn_vert i {
   -webkit-animation: rotate-check 1000ms;
           animation: rotate-check 1000ms;
 }
-.le_menu .element .btn_vert {
+.explorer .le_menu .element .btn_vert {
   background-color: #99E2D0;
   height: 180px;
   width: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 0px 50px 50px 0px;
   font-size: 50px;
   font-family: Roboto, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all 1s;
   background-color: #99E2D0;
 }
-.le_menu .element .btn_vert i {
+.explorer .le_menu .element .btn_vert i {
   display: block;
   transition: transform 1000ms;
   transition-delay: 250ms;
   transform: rotate(0deg);
-  font-size: 30px;
+  font-size: 70px;
   color: white;
 }
-.le_menu .element .btn_vert h3 {
+.explorer .le_menu .element .btn_vert h3 {
   font-size: 100px;
   font-family: Roboto, sans-serif;
 }
@@ -392,8 +421,7 @@ header {
     transform: rotate(360deg);
   }
 }
-
-.btn_violet {
+.explorer .btn_violet {
   width: 50%;
   padding: 35px;
   margin: auto;
