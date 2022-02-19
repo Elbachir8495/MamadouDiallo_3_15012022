@@ -19,6 +19,55 @@ header {
   font-size: 50px;
 }
 
+.fond_chargement {
+  font-family: "Shrikhand", cursive;
+  font-size: 40px;
+  -webkit-animation: fond_chargement 2000ms;
+          animation: fond_chargement 2000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-color: gainsboro;
+}
+
+@-webkit-keyframes fond_chargement {
+  0% {
+    visibility: visible;
+  }
+  98% {
+    visibility: visible;
+    font-size: 40px;
+  }
+  99% {
+    visibility: visible;
+    font-size: 0;
+    height: 2000px;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+  }
+}
+
+@keyframes fond_chargement {
+  0% {
+    visibility: visible;
+  }
+  98% {
+    visibility: visible;
+    font-size: 40px;
+  }
+  99% {
+    visibility: visible;
+    font-size: 0;
+    height: 2000px;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+  }
+}
 .chargement {
   border: 15px solid #f3f3f3;
   border-top: 15px solid #FF79DA;
@@ -88,6 +137,13 @@ header {
   padding-top: 5px;
   padding-bottom: 15px;
   height: 700px;
+}
+@media screen and (min-width: 992px) {
+  .explorer .explorer_text {
+    width: 300px;
+    margin-left: 250px;
+    font-family: Roboto, sans-serif;
+  }
 }
 .explorer h2 {
   font-size: 60px;
@@ -245,8 +301,7 @@ header {
 
 .le_menu {
   background: whitesmoke;
-  transform: translateY(-150px);
-  transform: translateY(50px);
+  transform: translateY(-100px);
   border-radius: 80px 80px 0px 0px;
   padding: 30px;
   padding-bottom: 90px;
@@ -344,11 +399,14 @@ header {
   justify-content: center;
   width: 80%;
   text-align: left;
+  padding-left: 10px;
   overflow: hidden;
   white-space: nowrap;
 }
 .le_menu .element .btn h3 {
   display: block;
+  width: 70%;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .le_menu .element .btn p {
@@ -367,9 +425,14 @@ header {
 .le_menu .element:hover > .btn_vert {
   width: 200px;
 }
+@media screen and (min-width: 992px) {
+  .le_menu .element:hover > .btn_vert {
+    width: 100px;
+  }
+}
 .le_menu .element:hover > .btn_vert i {
-  -webkit-animation: rotate-check 1000ms;
-          animation: rotate-check 1000ms;
+  -webkit-animation: rotate-btn_vert 1000ms;
+          animation: rotate-btn_vert 1000ms;
 }
 .le_menu .element .btn_vert {
   background-color: #99E2D0;
@@ -392,14 +455,14 @@ header {
   transition: transform 1000ms;
   transition-delay: 250ms;
   transform: rotate(0deg);
-  font-size: 70px;
+  font-size: 75px;
   color: white;
 }
 .le_menu .element .btn_vert h3 {
   font-size: 100px;
   font-family: Roboto, sans-serif;
 }
-@-webkit-keyframes rotate-check {
+@-webkit-keyframes rotate-btn_vert {
   0% {
     transform: rotate(0deg);
   }
@@ -413,7 +476,7 @@ header {
     transform: rotate(360deg);
   }
 }
-@keyframes rotate-check {
+@keyframes rotate-btn_vert {
   0% {
     transform: rotate(0deg);
   }
