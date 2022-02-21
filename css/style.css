@@ -301,10 +301,14 @@ header {
 }
 
 .le_menu {
+  transform: translateY(-100);
+  transform: translateY(100);
+  margin-top: -160px;
   background: whitesmoke;
-  transform: translateY(-100px);
+  position: relative;
   border-radius: 80px 80px 0px 0px;
   padding: 30px;
+  height: auto;
   padding-bottom: 90px;
   -webkit-animation: appear-card 3000ms;
           animation: appear-card 3000ms;
@@ -512,6 +516,7 @@ footer {
   color: white;
   padding-left: 70px;
   padding-top: 30px;
+  margin-top: 0px;
   padding-bottom: 30px;
 }
 footer h1 {
