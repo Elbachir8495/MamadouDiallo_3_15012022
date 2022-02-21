@@ -157,6 +157,7 @@ header {
 }
 .explorer .btn_explorer {
   width: 70%;
+  font-weight: bold;
   text-decoration: none;
   padding: 25px;
   margin: auto;
@@ -174,6 +175,7 @@ header {
   padding-left: 40px;
   position: relative;
   margin-right: 30px;
+  font-weight: bold;
 }
 #fonctionnement .btn {
   display: flex;
@@ -500,6 +502,7 @@ header {
   font-size: 50px;
   background: linear-gradient(#f071f0, #a329a3);
   border-radius: 70px/70px;
+  font-weight: bold;
 }
 .le_menu .btn_violet:hover {
   background: linear-gradient(to bottom, #fface8, #ae80e5);
@@ -518,6 +521,7 @@ footer h1 {
 }
 footer p {
   font-size: 26px;
+  font-weight: bold;
 }
 footer a {
   color: white;

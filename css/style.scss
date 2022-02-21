@@ -164,7 +164,7 @@ header{
     }
     .btn_explorer{
         width: 70%;
-      
+        font-weight: bold;
         text-decoration: none;
         padding: 25px;
         margin: auto;
@@ -180,6 +180,7 @@ header{
     padding-left: 40px;
     position: relative;
     margin-right:30px;
+    font-weight: bold;
 
     .btn{
         display: flex;
@@ -476,6 +477,7 @@ header{
         font-size: 50px;
         background: linear-gradient(#f071f0, #a329a3 );
         border-radius: 70px/70px;
+        font-weight: bold;
         @include btn_violet;
         
     }
@@ -489,7 +491,7 @@ footer{
     padding-left: 70px;
     padding-top: 30px;
     padding-bottom: 30px;
-  
+
 
     h1{
         font-family: 'Shrikhand', cursive;
@@ -497,6 +499,7 @@ footer{
     }
     p{
         font-size: 26px;
+        font-weight: bold;
     }
 
     a{
