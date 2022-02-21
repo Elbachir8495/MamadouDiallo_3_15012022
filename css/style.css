@@ -303,7 +303,7 @@ header {
 .le_menu {
   transform: translateY(-100);
   transform: translateY(100);
-  margin-top: -160px;
+  margin-top: -200px;
   background: whitesmoke;
   position: relative;
   border-radius: 80px 80px 0px 0px;
@@ -382,6 +382,9 @@ header {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.le_menu .les_elements .btn_coeur {
+  font-size: 60px;
 }
 .le_menu .element {
   display: flex;

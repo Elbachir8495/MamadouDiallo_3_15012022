@@ -9,6 +9,10 @@
     font-size: 30px;
   }
 
+  .heading_menu p {
+    font-size: 30px;
+  }
+
   .btn_localisation {
     font-size: 20px;
   }
@@ -117,6 +121,13 @@
     font-size: 15px;
   }
 
+  .le_menu h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+  }
+  .le_menu .les_elements i {
+    font-size: 30px;
+  }
   .le_menu .tous_menus {
     display: flex;
     justify-content: space-between;
@@ -124,15 +135,15 @@
     margin: auto;
   }
   .le_menu h3 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
   }
   .le_menu p {
-    font-size: 11px;
+    font-size: 13px;
     color: gray;
   }
   .le_menu .element {
-    width: 370px;
+    width: 400px;
     border-radius: 30px/30px;
     margin: 60px auto;
     height: 50px;
@@ -146,10 +157,10 @@
     transform: rotate(0deg);
     font-size: 30px;
   }
-
-  .btn_violet {
+  .le_menu .btn_violet {
     padding: 10px;
-    font-size: 10px;
+    font-size: 20px;
+    width: 170px;
   }
 
   .footer_items {
@@ -211,6 +222,10 @@
     transform: translateX(200%);
     padding: 10px;
     font-size: 20px;
+  }
+
+  footer h1 {
+    font-size: 10px;
   }
 
   .footer_items {
