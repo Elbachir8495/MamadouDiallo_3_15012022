@@ -407,13 +407,11 @@ header {
   justify-content: center;
   width: 80%;
   text-align: left;
-  overflow: hidden;
   white-space: nowrap;
 }
 .le_menu .element .btn h3 {
   display: block;
   width: 100%;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -422,7 +420,6 @@ header {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
   color: gray;
 }
 .le_menu .element .prix {
