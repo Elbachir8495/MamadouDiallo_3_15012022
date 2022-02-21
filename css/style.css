@@ -301,8 +301,8 @@ header {
 }
 
 .le_menu {
-  transform: translateY(-100);
-  transform: translateY(100);
+  transform: translateY(0);
+  transform: translateY(0);
   margin-top: -200px;
   background: whitesmoke;
   position: relative;
@@ -412,17 +412,21 @@ header {
 }
 .le_menu .element .btn h3 {
   display: block;
-  width: 70%;
+  width: 100%;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .le_menu .element .btn p {
   display: block;
-  white-space: nowrap;
+  width: 100%;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   color: gray;
 }
 .le_menu .element .prix {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 20%;
@@ -430,6 +434,7 @@ header {
 }
 .le_menu .element .prix p {
   display: block;
+  width: 100%;
 }
 .le_menu .element:hover > .btn_vert {
   width: 200px;

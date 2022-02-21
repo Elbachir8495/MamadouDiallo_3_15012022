@@ -300,8 +300,8 @@ header{
 }
 
 .le_menu{
-   transform: translateY(-100);
-   transform: translateY(100);
+   transform: translateY(0);
+   transform: translateY(0);
    margin-top: -200px;
     background: whitesmoke;
    position: relative;
@@ -378,36 +378,38 @@ header{
             justify-content: center;
             width: 80%;
             text-align: left;
-            
             overflow: hidden;
             white-space: nowrap;
             
            
-            h3{
+            & h3{
                 display: block;
-                width: 70%;
+                width: 100%;
+                overflow: hidden;
                 white-space: nowrap;
-                
                 text-overflow: ellipsis;
              
                 
             }
-            p{
+            & p{
                 display: block;
-               white-space: nowrap;
+                width: 100%;
                 text-overflow: ellipsis;
-             
+                white-space: nowrap;
+                overflow: hidden;
                 color: gray;
                 
             }
         }
         .prix{
+            display: flex;
             flex-direction: column;
             justify-content: center;
             width: 20%;
             padding-left: 10px;
             p{
                 display: block;
+                width: 100%;
             }
         }
 
@@ -489,6 +491,8 @@ header{
         @include btn_violet;
         
     }
+    
+
 }
 
 
