@@ -43,25 +43,26 @@
     flex-direction: column;
   }
   #fonctionnement h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
   #fonctionnement .les_btns {
     display: flex;
     justify-content: space-between;
   }
   #fonctionnement .btn {
-    font-size: 20px;
-    width: 470px;
+    font-size: 15px;
+    width: 270px;
     padding-left: 0;
+    margin-left: 25px;
   }
   #fonctionnement .number {
     font-size: 15px;
     width: 20px;
-    padding: 10px;
+    padding: 5px;
   }
   #fonctionnement i {
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   #les_restos {
@@ -83,7 +84,7 @@
   }
   #les_restos .tous_les_card .card {
     width: 40%;
-    height: 320px;
+    height: 280px;
     border-radius: 20px;
     margin: auto;
   }
@@ -97,17 +98,23 @@
   #les_restos .tous_les_card .card_body {
     height: 100%;
     font-size: 30px;
+    line-height: 0px;
   }
-  #les_restos .tous_les_card h3 {
+  #les_restos .tous_les_card .card_body i {
     font-size: 30px;
+    padding-top: 10px;
   }
-  #les_restos .tous_les_card p {
+  #les_restos .tous_les_card .card_body h3 {
     font-size: 20px;
+  }
+  #les_restos .tous_les_card .card_body p {
+    font-size: 15px;
   }
   #les_restos .tous_les_card .btn_nouveau {
-    transform: translateX(300%);
-    padding: 10px;
-    font-size: 20px;
+    top: 0px;
+    left: 100px;
+    padding: 0px;
+    font-size: 15px;
   }
 
   .le_menu .tous_menus {
@@ -138,6 +145,11 @@
     transition-delay: 250ms;
     transform: rotate(0deg);
     font-size: 30px;
+  }
+
+  .btn_violet {
+    padding: 10px;
+    font-size: 10px;
   }
 
   .footer_items {
