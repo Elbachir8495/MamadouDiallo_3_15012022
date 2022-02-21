@@ -369,36 +369,31 @@ header{
         line-height: 0px;
         font-family: Roboto, sans-serif;
         height: 180px;
-        overflow: hidden;
         width: 100%;
+        overflow: hidden;
         
         
         .btn{
+            display: block;
             flex-direction: column;
             justify-content: center;
             width: 80%;
+            
             text-align: left;
-            
+            padding: 20px;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             
-           
+            
             & h3{
                 display: block;
-                width: 100%;
-                
-                white-space: nowrap;
                 text-overflow: ellipsis;
-             
-                
             }
             & p{
-                display: block;
-                width: 100%;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                
-                color: gray;
-                
+                display: inline;
+               text-overflow: ellipsis;
+                color: gray; 
             }
         }
         .prix{
@@ -406,10 +401,10 @@ header{
             flex-direction: column;
             justify-content: center;
             width: 20%;
-            padding-left: 10px;
+            padding-left: 40px;
+            
             p{
                 display: block;
-                width: 100%;
             }
         }
 

@@ -399,27 +399,27 @@ header {
   line-height: 0px;
   font-family: Roboto, sans-serif;
   height: 180px;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
 }
 .le_menu .element .btn {
+  display: block;
   flex-direction: column;
   justify-content: center;
   width: 80%;
   text-align: left;
+  padding: 20px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .le_menu .element .btn h3 {
   display: block;
-  width: 100%;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .le_menu .element .btn p {
-  display: block;
-  width: 100%;
+  display: inline;
   text-overflow: ellipsis;
-  white-space: nowrap;
   color: gray;
 }
 .le_menu .element .prix {
@@ -427,11 +427,10 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 20%;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 .le_menu .element .prix p {
   display: block;
-  width: 100%;
 }
 .le_menu .element:hover > .btn_vert {
   width: 200px;
