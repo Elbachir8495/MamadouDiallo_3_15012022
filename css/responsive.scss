@@ -1,4 +1,4 @@
-@media screen and(min-width:1024px) {
+@media screen and(min-width:992px) {
     #blocpage{
         width: 100%;
         margin: auto;
@@ -76,7 +76,8 @@
         }
         i{
             font-size: 20px;
-            padding-left: 20px;
+            padding-left: 30px;
+            page-break-inside: 30px;
         }
         
     }
@@ -132,7 +133,7 @@
          .btn_nouveau{
            top: 0px;
            left: 100px;
-            padding: 0px;
+            padding: 5px;
             font-size: 15px;
          }
         }
@@ -228,7 +229,7 @@
             flex-wrap: wrap;
 
             .card{
-                width: 40%;
+                width: 45%;
                 height: 300px;
                 border-radius: 20px;
                 margin: auto;
@@ -242,25 +243,31 @@
             }
             .card_body{
              height: 100%;
-             font-size: 30px;
+             font-size: 20px;
+             i{
+                font-size: 30px;
+                padding-top: 10px;
+            }
          }
          h3{
-             font-size: 30px;
+             font-size: 20px;
          }
          p{
              font-size: 20px;
          }
          .btn_nouveau{
-            transform: translateX(200%);
+            transform: translateX(240%);
             padding: 10px;
             font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px/10px;
          }
         }
        
     }
     footer {
         h1{
-            font-size: 10px;
+            font-size: 20px;
         }
     }
     .footer_items{
@@ -268,7 +275,7 @@
         margin: auto;
     
        p{
-        font-size: 20px;
+        font-size: 15px;
         margin-right: 80px;
        }
         

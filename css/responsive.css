@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   #blocpage {
     width: 100%;
     margin: auto;
@@ -66,7 +66,8 @@
   }
   #fonctionnement i {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
+    page-break-inside: 30px;
   }
 
   #les_restos {
@@ -117,7 +118,7 @@
   #les_restos .tous_les_card .btn_nouveau {
     top: 0px;
     left: 100px;
-    padding: 0px;
+    padding: 5px;
     font-size: 15px;
   }
 
@@ -196,7 +197,7 @@
     flex-wrap: wrap;
   }
   #les_restos .tous_les_card .card {
-    width: 40%;
+    width: 45%;
     height: 300px;
     border-radius: 20px;
     margin: auto;
@@ -210,22 +211,28 @@
   }
   #les_restos .tous_les_card .card_body {
     height: 100%;
+    font-size: 20px;
+  }
+  #les_restos .tous_les_card .card_body i {
     font-size: 30px;
+    padding-top: 10px;
   }
   #les_restos .tous_les_card h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
   #les_restos .tous_les_card p {
     font-size: 20px;
   }
   #les_restos .tous_les_card .btn_nouveau {
-    transform: translateX(200%);
+    transform: translateX(240%);
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px/10px;
   }
 
   footer h1 {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .footer_items {
@@ -233,7 +240,7 @@
     margin: auto;
   }
   .footer_items p {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 80px;
   }
 }/*# sourceMappingURL=responsive.css.map */
