@@ -1,4 +1,4 @@
-/
+
 $colour-primary:#9356DC;
 $colour-secondary:#FF79DA;
 $colour-tertiary:#99E2D0;
@@ -63,118 +63,10 @@ $color-dark:#000;
 
 
 
-@keyframes intro-appear{
-    0%{
-       
-        visibility:hidden;
-        
-    }
-    99%{
-        
-        visibility:hidden;
-       
-    }
-    100%{
-        
-        visibility:visible;
-       
-    }
-}
-
-@keyframes intro-disappear{
-    0%{
-       
-        visibility:visible;
-    }
-    98%{
-        
-        visibility:visible;
-        font-size: 40px;
-    }
-    99%{
-        
-        visibility:visible;
-        font-size: 0;
-        height:2000px;
-
-    }
-    100%{
-        
-        visibility:hidden;
-        height:0;
-        font-size: 0;
-
-    }
-}
-
-@keyframes intro-text-anim{
-    from{
-        transform: scale(1);
-        color:white;
-      
-        
-    }
-    to{
-        transform: scale(1.5);
-        color:gray;
-        padding-top: 200px;
-        text-decoration:underline;
-        
-    }
-}
-
-
-@keyframes progress-heart{
-    0% {
-        transform: scale(0);
-        -webkit-text-stroke: 0px ;
-            background: -moz-linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
-            background: -webkit-linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
-            background: linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-    20% {
-        transform: scale(1);
-        -webkit-text-stroke: 0px ;
-            background: -moz-linear-gradient(to bottom,white 80%, $colour-primary  10%, $colour-primary 10%);
-            background: -webkit-linear-gradient(to bottom,white 80%, $colour-primary  10%, $colour-primary 10%);
-            background: linear-gradient(to bottom,white 80%, $colour-primary  10%, $colour-primary 10%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-
-
-    50% {
-        transform: scale(1.5);
-        -webkit-text-stroke: 0px ;
-            background: -moz-linear-gradient(to bottom,white 70%, $colour-primary  20%, $colour-primary 10%);
-            background: -webkit-linear-gradient(to bottom,white 70%, $colour-primary  20%, $colour-primary 10%);
-            background: linear-gradient(to bottom,white 70%, $colour-primary  20%, $colour-primary 10%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
 
 
 
-    100% {
-        transform: scale(2);
-        -webkit-text-stroke: 0px ;
-            background: -moz-linear-gradient(to bottom,white 0%, $colour-primary  50%, $colour-primary 50%);
-            background: -webkit-linear-gradient(to bottom,white 0%, $colour-primary  50%, $colour-primary 50%);
-            background: linear-gradient(to bottom,white 0%, $colour-primary  50%, $colour-primary 50%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -257,20 +149,7 @@ header{
         
     }
     
-.heading_menu{
-    display: flex;
-    align-items: baseline;
-    padding-left: 50px;
-    width: auto;
-   
-    p{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        font-size: 70px;
-    }
 
-}
 .btn_localisation{
     display: flex;
     justify-content: center;
@@ -443,51 +322,68 @@ header{
             font-size: 60px;
         }
    }
-   
-
-    
-   
-        
-        
-    }
-
-
-//page type 2
-//variable
-
-//keyframe
-@keyframes rotate-check{
+ }
+ @keyframes progress-heart{
     0% {
-        transform: rotate(0deg);
+        transform: scale(0);
+        -webkit-text-stroke: 0px ;
+            background: -moz-linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
+            background: -webkit-linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
+            background: linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
     20% {
-        transform: rotate(0deg);
+        transform: scale(1);
+        -webkit-text-stroke: 0px ;
+            background: -moz-linear-gradient(to bottom,white 80%, $colour-primary  10%, $colour-primary 10%);
+            background: -webkit-linear-gradient(to bottom,white 80%, $colour-primary  10%, $colour-primary 10%);
+            background: linear-gradient(to bottom,white 80%, $colour-primary  10%, $colour-primary 10%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
 
 
-    90% {
-        transform: rotate(360deg);
+    50% {
+        transform: scale(1.5);
+        -webkit-text-stroke: 0px ;
+            background: -moz-linear-gradient(to bottom,white 70%, $colour-primary  20%, $colour-primary 10%);
+            background: -webkit-linear-gradient(to bottom,white 70%, $colour-primary  20%, $colour-primary 10%);
+            background: linear-gradient(to bottom,white 70%, $colour-primary  20%, $colour-primary 10%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
 
 
 
     100% {
-        transform: rotate(360deg);
+        transform: scale(2);
+        -webkit-text-stroke: 0px ;
+            background: -moz-linear-gradient(to bottom,white 0%, $colour-primary  50%, $colour-primary 50%);
+            background: -webkit-linear-gradient(to bottom,white 0%, $colour-primary  50%, $colour-primary 50%);
+            background: linear-gradient(to bottom,white 0%, $colour-primary  50%, $colour-primary 50%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
 }
-//mixin
+
+//page type 2
+
+//keyframe
+
+
 #body{
     
     background-color: $colour-gray;
     font-family: 'Roboto', sans-serif;
-
-    & .underline{
-        text-decoration-line: underline;
-        text-decoration-style:solid;
-        text-decoration-thickness: 4px;
-        text-decoration-color: $colour-tertiary;
-        text-underline-offset: 8px;
-    }
 
     & h2{
         text-transform: uppercase;
@@ -798,10 +694,25 @@ header{
         }
 
     }
+}
+@keyframes rotate-check{
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
 
-    
+
+    90% {
+        transform: rotate(360deg);
+    }
 
 
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -822,7 +733,7 @@ header{
     margin-top: 50px;
     padding-top:15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    @include mix-btn($colour-secondary,$colour-primary);
+    @include btn_violet;
     
     @media screen and (max-width:600px) {
         margin-top: 15px;
@@ -837,9 +748,6 @@ footer{
     margin-top: 0px;
     padding-bottom: 30px;
     
-  
-
-
     h1{
         font-family: 'Shrikhand', cursive;
         font-size: 40px;
@@ -856,18 +764,7 @@ footer{
     a:hover{
         color: cornflowerblue;
     }
-    @media screen and(min-width:992px){
-        .footer_items{
-            display: flex;
-            
-            margin: auto;
-           p{
-            font-size: 20px;
-            margin-right: 80px;
-           }
-            
-        }
-    }
+    
 }
 
 
