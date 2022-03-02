@@ -9,9 +9,9 @@ $color-dark:#000;
 
 @mixin btn_violet {
     &:hover{
-        background: -moz-linear-gradient(top, lighten($colour_secondary,10%), lighten($colour_primary,10%));
-        background: -webkit-linear-gradient(top, lighten($colour_secondary,10%), lighten($colour_primary,10%));
-        background: linear-gradient(to bottom, lighten($colour_secondary,10%) , lighten($colour_primary,10%));
+        background: -moz-linear-gradient(top, lighten($colour_secondary,20%), lighten($colour_primary,20%));
+        background: -webkit-linear-gradient(top, lighten($colour_secondary,20%), lighten($colour_primary,20%));
+        background: linear-gradient(to bottom, lighten($colour_secondary,20%) , lighten($colour_primary,20%));
    }
 }
 

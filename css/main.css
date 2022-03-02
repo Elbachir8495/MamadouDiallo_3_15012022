@@ -157,7 +157,7 @@ header {
   box-shadow: 10px 25px whitesmoke;
 }
 .explorer .btn_explorer:hover {
-  background: linear-gradient(to bottom, #fface8, #ae80e5);
+  background: linear-gradient(to bottom, #ffdff6, #c9abee);
 }
 
 #fonctionnement {
@@ -677,7 +677,7 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #command-btn:hover {
-  background: linear-gradient(to bottom, #fface8, #ae80e5);
+  background: linear-gradient(to bottom, #ffdff6, #c9abee);
 }
 @media screen and (max-width: 600px) {
   #command-btn {
