@@ -253,6 +253,33 @@
     border-radius: 10px/10px;
   }
 
+  .footer_index {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+  .footer_index h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    text-align: left;
+  }
+  .footer_index .footer_items {
+    display: flex;
+    margin: auto;
+  }
+  .footer_index .footer_items p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-right: 70px;
+  }
+  .footer_index .footer_items a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer_index .footer_items a:hover {
+    color: cornflowerblue;
+  }
+
   footer h2 {
     font-size: 20px;
   }
