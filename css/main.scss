@@ -78,7 +78,7 @@ header{
 }
 
 @keyframes fond_chargement{
-    0%{
+    20%{
        
         visibility:visible;
     }
@@ -221,6 +221,7 @@ header{
         font-size: 50px;
         padding-left: 65px;
         padding-right: 30px;
+        color: rgb(190, 184, 184);
     }
    
     .btn:hover{
@@ -697,6 +698,10 @@ footer{
     text-align: left;
     
     h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+    }
+    h2{
         font-family: 'Shrikhand', cursive;
         font-size: 20px;
     }

@@ -67,7 +67,6 @@
   #fonctionnement i {
     font-size: 20px;
     padding-left: 30px;
-    page-break-inside: 30px;
   }
 
   #les_restos {
@@ -163,7 +162,7 @@
     color: cornflowerblue;
   }
 }
-@media screen and (min-device-width: 767px) and (max-device-width: 991px) {
+@media screen and (min-device-width: 767px) and (max-width: 991px) {
   #blocpage {
     width: 100%;
     margin: auto;
