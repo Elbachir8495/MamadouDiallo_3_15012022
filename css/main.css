@@ -152,7 +152,7 @@ header {
   margin: auto;
   color: white;
   font-size: 50px;
-  background: linear-gradient(#c282c2, #e47ee4);
+  background: linear-gradient(to bottom, #fface8, #ae80e5);
   border-radius: 70px/70px;
   box-shadow: 10px 25px whitesmoke;
 }
@@ -176,6 +176,7 @@ header {
   margin-bottom: 30px;
   font-size: 40px;
   color: black;
+  width: auto;
 }
 #fonctionnement .number {
   position: absolute;
@@ -194,9 +195,11 @@ header {
 #fonctionnement i {
   position: relative;
   font-size: 50px;
-  padding-left: 65px;
+  padding-left: 30px;
   padding-right: 30px;
   color: #beb8b8;
+  margin-left: 60px;
+  margin-right: 50px;
 }
 #fonctionnement .btn:hover {
   background-color: #efe7fa;
@@ -287,15 +290,6 @@ header {
 }
 
 @-webkit-keyframes progress-heart {
-  0% {
-    transform: scale(0);
-    -webkit-text-stroke: 0px;
-    background: linear-gradient(to bottom, white 100%, #9356DC 0%, #9356DC 0%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   20% {
     transform: scale(1);
     -webkit-text-stroke: 0px;
@@ -326,15 +320,6 @@ header {
 }
 
 @keyframes progress-heart {
-  0% {
-    transform: scale(0);
-    -webkit-text-stroke: 0px;
-    background: linear-gradient(to bottom, white 100%, #9356DC 0%, #9356DC 0%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   20% {
     transform: scale(1);
     -webkit-text-stroke: 0px;
@@ -363,6 +348,32 @@ header {
     -webkit-text-fill-color: transparent;
   }
 }
+.footer_index {
+  background-color: #070606;
+  color: white;
+  padding-left: 50px;
+  padding-top: 20px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.footer_index h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 60px;
+}
+.footer_index .footer_items p {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.footer_index .footer_items a {
+  color: white;
+  text-decoration: none;
+}
+.footer_index .footer_items a:hover {
+  color: cornflowerblue;
+}
+
 #body {
   font-family: "Roboto", sans-serif;
 }
@@ -679,7 +690,7 @@ footer {
   background-color: #070606;
   color: white;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 0px;
   padding-bottom: 30px;
   text-align: left;
@@ -688,14 +699,10 @@ footer h1 {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
 }
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
-}
 footer .footer_items p {
   font-size: 20px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 28px;
 }
 footer .footer_items a {
   color: white;

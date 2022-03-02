@@ -177,7 +177,10 @@ header{
         margin: auto;
         color: white;
         font-size: 50px;
-        background: linear-gradient(#c282c2, #e47ee4 );
+        background: -moz-linear-gradient(top, lighten($colour_secondary,10%), lighten($colour_primary,10%));
+        background: -webkit-linear-gradient(top, lighten($colour_secondary,10%), lighten($colour_primary,10%));
+        background: linear-gradient(to bottom, lighten($colour_secondary,10%) , lighten($colour_primary,10%));
+   
         border-radius: 70px/70px;
         box-shadow: 10px 25px whitesmoke;
         @include btn_violet;
@@ -193,13 +196,14 @@ header{
         display: flex;
         align-items: flex-start;
         margin-left: 50px;
-       
         border: 0px solid;
         border-radius: 60px/60px;
         background-color: whitesmoke;
         margin-bottom: 30px;
         font-size: 40px;
         color: black;
+        width: auto;
+        
        
     }
     .number{
@@ -209,19 +213,23 @@ header{
         background-color: $colour_primary;
         text-align: center;
         width: 60px;
+        
         padding-right: 10px;
         padding-left: 10px;
         padding-top: 17px;
         padding-bottom: 17PX;
         font-size: 37px;
         color: white;  
+        
     }
     i{
         position: relative;
         font-size: 50px;
-        padding-left: 65px;
+        padding-left: 30px;
         padding-right: 30px;
         color: rgb(190, 184, 184);
+        margin-left: 60px;
+        margin-right: 50px;
     }
    
     .btn:hover{
@@ -305,17 +313,7 @@ header{
    }
  }
  @keyframes progress-heart{
-    0% {
-        transform: scale(0);
-        -webkit-text-stroke: 0px ;
-            background: -moz-linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
-            background: -webkit-linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
-            background: linear-gradient(to bottom,white 100%, $colour-primary  0%, $colour-primary 0%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
+    
     20% {
         transform: scale(1);
         -webkit-text-stroke: 0px ;
@@ -354,6 +352,37 @@ header{
             background-clip: text;
             -webkit-text-fill-color: transparent;
     }
+}
+.footer_index{
+    background-color: rgb(7, 6, 6);
+    color: white;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    text-align: left;
+    
+    
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-size: 60px;
+    }
+    .footer_items{
+        p{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 40px;
+        }
+    
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: cornflowerblue;
+        }
+    }
+    
 }
 
 //page type 2
@@ -692,7 +721,7 @@ footer{
     background-color: rgb(7, 6, 6);
     color: white;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 0px;
     padding-bottom: 30px;
     text-align: left;
@@ -701,15 +730,12 @@ footer{
         font-family: 'Shrikhand', cursive;
         font-size: 20px;
     }
-    h2{
-        font-family: 'Shrikhand', cursive;
-        font-size: 20px;
-    }
+    
     .footer_items{
         p{
             font-size: 20px;
             font-weight: bold;
-            line-height: 30px;
+            line-height: 28px;
         }
     
         a{

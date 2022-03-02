@@ -60,13 +60,19 @@
     margin-left: 25px;
   }
   #fonctionnement .number {
-    font-size: 15px;
+    font-size: 12px;
     width: 20px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 10px;
   }
   #fonctionnement i {
     font-size: 20px;
     padding-left: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #les_restos {
@@ -135,13 +141,40 @@
     width: 170px;
   }
 
+  .footer_index {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+  .footer_index h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    text-align: left;
+  }
+  .footer_index .footer_items {
+    display: flex;
+    margin: auto;
+  }
+  .footer_index .footer_items p {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-right: 70px;
+  }
+  .footer_index .footer_items a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer_index .footer_items a:hover {
+    color: cornflowerblue;
+  }
+
   footer {
     padding-left: 70px;
     padding-top: 30px;
   }
   footer h1 {
     font-family: "Shrikhand", cursive;
-    font-size: 40px;
+    font-size: 35px;
     text-align: left;
   }
   footer .footer_items {
@@ -149,7 +182,7 @@
     margin: auto;
   }
   footer .footer_items p {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     font-weight: bold;
     margin-right: 70px;

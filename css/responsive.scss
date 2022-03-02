@@ -66,13 +66,20 @@
             margin-left: 25px;
         }
         .number{
-            font-size: 15px;
+            font-size: 12px;
             width: 20px;
-            padding: 5px;  
+            padding-right: 5px;  
+            padding-left: 5px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-left: 10px;
+            
         }
         i{
             font-size: 20px;
             padding-left: 30px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
     
 }
@@ -154,13 +161,12 @@
         }
        
     }
-   
-    footer{
+    .footer_index{
         padding-left: 70px;
         padding-top: 30px;
-        h1{
+        h2{
             font-family: 'Shrikhand', cursive;
-            font-size: 40px;
+            font-size: 30px;
             text-align: left;
         }
         .footer_items{
@@ -168,7 +174,37 @@
             margin: auto;
             
            p{
-            font-size: 20px;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+            margin-right: 70px;
+           }
+           a{
+            color: white;
+            text-decoration: none;
+           }
+           a:hover{
+            color: cornflowerblue;
+        }
+            
+        }
+
+    }
+   
+    footer{
+        padding-left: 70px;
+        padding-top: 30px;
+        h1{
+            font-family: 'Shrikhand', cursive;
+            font-size: 35px;
+            text-align: left;
+        }
+        .footer_items{
+            display: flex;
+            margin: auto;
+            
+           p{
+            font-size: 25px;
             color: white;
             font-weight: bold;
             margin-right: 70px;
