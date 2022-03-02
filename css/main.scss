@@ -34,39 +34,6 @@ $color-dark:#000;
 }
 
 
-@mixin mix-btn( $color0:$colour-secondary,$color1:$colour-primary) {
-    display:block;
-    text-align: center;
-    text-decoration: none;
-    background: -moz-linear-gradient(to bottom right, $color0, $color1);
-    background: -webkit-linear-gradient(to bottom right, $color0, $color1);
-    background: linear-gradient(to bottom right, $color0, $color1);
-    color: white;
-    border-radius: 30px;
-    &:hover {
-    background: -moz-linear-gradient(top, lighten($color0,10%), lighten($color1,10%) );
-    background: -webkit-linear-gradient(top, lighten($color0,10%), lighten($color1,10%) );
-    background: linear-gradient(to bottom, lighten($color0,10%) , lighten($color1,10%) );
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    }
-   }
-
-@mixin marge-rl {
-    margin-left: 20px;
-    @media screen and (max-width:600px) {
-        
-        margin-left: 0px;
-    }
-
-    
-}
-
-
-
-
-
-
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -92,7 +59,23 @@ header{
     animation-fill-mode: forwards;
     background-color: gainsboro;
 }
-
+@keyframes fond_chargement{
+    0%{
+       
+        visibility:hidden;
+        
+    }
+    99%{
+        
+        visibility:hidden;
+       
+    }
+    100%{
+        
+        visibility:visible;
+       
+    }
+}
 
 @keyframes fond_chargement{
     0%{
@@ -129,7 +112,7 @@ header{
     -webkit-animation: spin 2s;
     -o-animation: spin 2s;
     animation: spin 2s;
-    opacity: 0;
+    opacity: O;
     margin: auto;
     position: absolute;
     left: 0; top: 0; bottom: 0; right: 0;
@@ -140,7 +123,7 @@ header{
     @keyframes spin {
         0%{
             transform: rotate(0deg);
-            opacity: 1;
+            opacity: 0;
         }
         100%{
             transform: rotate(360deg);
@@ -168,7 +151,6 @@ header{
     padding-bottom: 15px;
     height: 700px;
     @media screen and(min-width:992px){
-       
         .explorer_text{
             width: 300px;
             margin-left: 250px;
@@ -195,7 +177,7 @@ header{
         margin: auto;
         color: white;
         font-size: 50px;
-        background: linear-gradient(#f071f0, #dfa3df );
+        background: linear-gradient(#c282c2, #e47ee4 );
         border-radius: 70px/70px;
         box-shadow: 10px 25px whitesmoke;
         @include btn_violet;
@@ -316,8 +298,6 @@ header{
         background-color: white;
         height: 100%;
         @include btn_coeur;
-      
-
         i{
             font-size: 60px;
         }
@@ -381,24 +361,10 @@ header{
 
 
 #body{
+    font-family: 'Roboto', sans-serif; 
     
-    background-color: $colour-gray;
-    font-family: 'Roboto', sans-serif;
-
-    & h2{
-        text-transform: uppercase;
-        font-weight: lighter;
-        padding-left: 15px;
-        padding-bottom: 15px;
-        @media screen and (max-width:600px) {
-        font-size: 18px;
-        }
-    }
-
-    & p{
-        font-size: small;
-    }
 }
+
 
 @keyframes appear-card {
     0%{
@@ -442,9 +408,7 @@ header{
     & i{
 
         font-size: 30px;
-        @media screen and (max-width:600px) {
-            font-size: 25px;
-        }
+        
     }
     & .logo{
         display: flex;
@@ -468,31 +432,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @media screen and (max-width:600px) {
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 0px;
-
-    }
-}
-
-#entree{
-    padding-top: 40px;
-    background-color: $colour-gray;
-    @media screen and (max-width:600px) {
-        padding-top: 0px;
-        margin-top: 0px;
-
-    }
-    
     
 }
 
 
-#plat,#dessert,#commander{
-    padding-top: 30px;
 
-}
+
 
 #titre_section{
     
@@ -597,7 +542,12 @@ header{
     }
 
 }
-
+.bottom_vert{
+    padding-bottom: 8px;
+    border-bottom: 3px solid $colour_tertiary;
+    width: 35px;
+    margin-left: 10px;
+}
 .card_menu{
     display: flex;
     flex-direction: row;
@@ -622,6 +572,7 @@ header{
         margin-right: 5px;
 
     }
+   
 
     
 
@@ -715,10 +666,6 @@ header{
     }
 }
 
-
-
-
-
 #commander
 {
     display: flex;
@@ -743,26 +690,30 @@ header{
 footer{
     background-color: rgb(7, 6, 6);
     color: white;
-    padding-left: 70px;
-    padding-top: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
     margin-top: 0px;
     padding-bottom: 30px;
+    text-align: left;
     
     h1{
         font-family: 'Shrikhand', cursive;
-        font-size: 40px;
+        font-size: 20px;
     }
-    p{
-        font-size: 26px;
-        font-weight: bold;
-    }
-
-    a{
-        color: white;
-        text-decoration: none;
-    }
-    a:hover{
-        color: cornflowerblue;
+    .footer_items{
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+    
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: cornflowerblue;
+        }
     }
     
 }

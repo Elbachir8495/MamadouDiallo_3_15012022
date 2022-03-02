@@ -2,7 +2,7 @@
   #blocpage {
     width: 100%;
     margin: auto;
-    max-width: 1460px;
+    max-width: 1920px;
   }
 
   header {
@@ -122,55 +122,45 @@
     font-size: 15px;
   }
 
-  .le_menu h1 {
-    font-family: "Shrikhand", cursive;
-    font-size: 30px;
-  }
-  .le_menu .les_elements i {
-    font-size: 30px;
-  }
-  .le_menu .tous_menus {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
-  }
-  .le_menu h3 {
-    font-size: 15px;
+  .card_menu h3 {
+    font-size: 20px;
     font-weight: bold;
   }
-  .le_menu p {
-    font-size: 13px;
+  .card_menu p {
+    font-size: 17px;
     color: gray;
   }
-  .le_menu .element {
-    width: 380px;
-    border-radius: 30px/30px;
-    margin: 60px auto;
-    height: 50px;
-  }
-  .le_menu .element .btn_vert {
-    transition: all 1s;
-  }
-  .le_menu .element .btn_vert i {
-    transition: transform 1000ms;
-    transition-delay: 250ms;
-    transform: rotate(0deg);
-    font-size: 30px;
-  }
-  .le_menu .btn_violet {
+  .card_menu .btn_violet {
     padding: 10px;
     font-size: 20px;
     width: 170px;
   }
 
-  .footer_items {
+  footer {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+  footer h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 40px;
+    text-align: left;
+  }
+  footer .footer_items {
     display: flex;
     margin: auto;
   }
-  .footer_items p {
+  footer .footer_items p {
     font-size: 20px;
-    margin-right: 80px;
+    color: white;
+    font-weight: bold;
+    margin-right: 70px;
+  }
+  footer .footer_items a {
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer_items a:hover {
+    color: cornflowerblue;
   }
 }
 @media screen and (min-device-width: 767px) and (max-device-width: 991px) {
@@ -231,16 +221,16 @@
     border-radius: 10px/10px;
   }
 
-  footer h1 {
+  footer h2 {
     font-size: 20px;
   }
-
-  .footer_items {
+  footer .footer_items {
     display: flex;
     margin: auto;
   }
-  .footer_items p {
-    font-size: 15px;
+  footer .footer_items p {
+    font-size: 13px;
     margin-right: 80px;
+    color: white;
   }
 }/*# sourceMappingURL=responsive.css.map */

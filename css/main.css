@@ -29,24 +29,27 @@ header {
 
 @-webkit-keyframes fond_chargement {
   0% {
-    visibility: visible;
-  }
-  98% {
-    visibility: visible;
-    font-size: 40px;
+    visibility: hidden;
   }
   99% {
-    visibility: visible;
-    font-size: 0;
-    height: 2000px;
+    visibility: hidden;
   }
   100% {
-    visibility: hidden;
-    height: 0;
-    font-size: 0;
+    visibility: visible;
   }
 }
 
+@keyframes fond_chargement {
+  0% {
+    visibility: hidden;
+  }
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 @keyframes fond_chargement {
   0% {
     visibility: visible;
@@ -75,7 +78,7 @@ header {
   height: 100px;
   -webkit-animation: spin 2s;
   animation: spin 2s;
-  opacity: 0;
+  opacity: O;
   margin: auto;
   position: absolute;
   left: 0;
@@ -87,7 +90,7 @@ header {
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: rotate(360deg);
@@ -98,7 +101,7 @@ header {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: rotate(360deg);
@@ -149,7 +152,7 @@ header {
   margin: auto;
   color: white;
   font-size: 50px;
-  background: linear-gradient(#f071f0, #dfa3df);
+  background: linear-gradient(#c282c2, #e47ee4);
   border-radius: 70px/70px;
   box-shadow: 10px 25px whitesmoke;
 }
@@ -360,22 +363,7 @@ header {
   }
 }
 #body {
-  background-color: #eaeaea;
   font-family: "Roboto", sans-serif;
-}
-#body h2 {
-  text-transform: uppercase;
-  font-weight: lighter;
-  padding-left: 15px;
-  padding-bottom: 15px;
-}
-@media screen and (max-width: 600px) {
-  #body h2 {
-    font-size: 18px;
-  }
-}
-#body p {
-  font-size: small;
 }
 
 @-webkit-keyframes appear-card {
@@ -436,11 +424,6 @@ header {
 #nav_meal i {
   font-size: 30px;
 }
-@media screen and (max-width: 600px) {
-  #nav_meal i {
-    font-size: 25px;
-  }
-}
 #nav_meal .logo {
   display: flex;
   width: 100%;
@@ -462,28 +445,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-@media screen and (max-width: 600px) {
-  .wrap {
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 0px;
-  }
-}
-
-#entree {
-  padding-top: 40px;
-  background-color: #eaeaea;
-}
-@media screen and (max-width: 600px) {
-  #entree {
-    padding-top: 0px;
-    margin-top: 0px;
-  }
-}
-
-#plat, #dessert, #commander {
-  padding-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -560,6 +521,13 @@ header {
   border-top-right-radius: 0px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.bottom_vert {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #99E2D0;
+  width: 35px;
+  margin-left: 10px;
 }
 
 .card_menu {
@@ -709,23 +677,25 @@ header {
 footer {
   background-color: #070606;
   color: white;
-  padding-left: 70px;
-  padding-top: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
   margin-top: 0px;
   padding-bottom: 30px;
+  text-align: left;
 }
 footer h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 40px;
+  font-size: 20px;
 }
-footer p {
-  font-size: 26px;
+footer .footer_items p {
+  font-size: 20px;
   font-weight: bold;
+  line-height: 30px;
 }
-footer a {
+footer .footer_items a {
   color: white;
   text-decoration: none;
 }
-footer a:hover {
+footer .footer_items a:hover {
   color: cornflowerblue;
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
     #blocpage{
         width: 100%;
         margin: auto;
-        max-width: 1460px;
+        max-width: 1920px;
     }
     header{
         font-size: 20px;
@@ -140,48 +140,19 @@
        
     }
     
-    .le_menu{
-        h1{
-            font-family: 'Shrikhand', cursive;
-            font-size: 30px;
-        }
-        .les_elements{
-            i{
-                font-size: 30px;
-            }
-        }
-        .tous_menus{
-            display: flex;
-            justify-content: space-between;   
-            width: 100%;
-            margin: auto;
-            
-        }
+    .card_menu{
+        
+        
         h3{
-            font-size: 15px;
+            font-size: 20px;
             font-weight: bold;
         }
         p{
-            font-size: 13px;
+            font-size: 17px;
             color: gray;
         }
         
-        .element{
-            width: 380px;
-            border-radius: 30px/30px;
-            margin: 60px auto;
-            height: 50px;
-            .btn_vert{
-                transition: all 1s;
-                
-            & i{
-            transition: transform 1000ms;
-            transition-delay: 250ms;
-            transform: rotate(0deg);
-            font-size: 30px;
-                }
-            }
-        }
+        
         .btn_violet{
             padding: 10px;
             font-size: 20px;
@@ -191,15 +162,33 @@
        
     }
    
-    .footer_items{
-        display: flex;
-        
-        margin: auto;
-       p{
-        font-size: 20px;
-        margin-right: 80px;
-       }
-        
+    footer{
+        padding-left: 70px;
+        padding-top: 30px;
+        h1{
+            font-family: 'Shrikhand', cursive;
+            font-size: 40px;
+            text-align: left;
+        }
+        .footer_items{
+            display: flex;
+            margin: auto;
+            
+           p{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            margin-right: 70px;
+           }
+           a{
+            color: white;
+            text-decoration: none;
+           }
+           a:hover{
+            color: cornflowerblue;
+        }
+            
+        }
     }
     
 }
@@ -266,20 +255,22 @@
        
     }
     footer {
-        h1{
+        h2{
             font-size: 20px;
         }
-    }
-    .footer_items{
-        display: flex;
-        margin: auto;
-    
-       p{
-        font-size: 15px;
-        margin-right: 80px;
-       }
+        .footer_items{
+            display: flex;
+            margin: auto;
         
+           p{
+            font-size: 13px;
+            margin-right: 80px;
+            color: white;
+           }
+            
+        }
     }
+    
 }
 
 
