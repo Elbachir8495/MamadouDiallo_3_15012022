@@ -1,27 +1,7 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-}
-
-#blocpage {
-  width: 100%;
-  margin: auto;
-}
-
-header {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding-top: 10px;
-  background: white;
-  font-family: "Shrikhand", cursive;
-  font-size: 50px;
-}
-
 .fond_chargement {
   font-size: 40px;
-  -webkit-animation: fond_chargement 2000ms;
-          animation: fond_chargement 2000ms;
+  -webkit-animation: fond_chargement 3000ms;
+          animation: fond_chargement 3000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-color: gainsboro;
@@ -29,7 +9,7 @@ header {
 
 @-webkit-keyframes fond_chargement {
   0% {
-    visibility: hidden;
+    visibility: visible;
   }
   99% {
     visibility: hidden;
@@ -41,7 +21,7 @@ header {
 
 @keyframes fond_chargement {
   0% {
-    visibility: hidden;
+    visibility: visible;
   }
   99% {
     visibility: hidden;
@@ -51,12 +31,8 @@ header {
   }
 }
 @keyframes fond_chargement {
-  20% {
+  0% {
     visibility: visible;
-  }
-  98% {
-    visibility: visible;
-    font-size: 40px;
   }
   99% {
     visibility: visible;
@@ -78,7 +54,7 @@ header {
   height: 100px;
   -webkit-animation: spin 2s;
   animation: spin 2s;
-  opacity: O;
+  opacity: 1;
   margin: auto;
   position: absolute;
   left: 0;
@@ -88,9 +64,9 @@ header {
 }
 
 @-webkit-keyframes spin {
-  0% {
+  50% {
     transform: rotate(0deg);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
@@ -99,15 +75,35 @@ header {
 }
 
 @keyframes spin {
-  0% {
+  50% {
     transform: rotate(0deg);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
     opacity: 1;
   }
 }
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+#blocpage {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  background: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+}
+
 .btn_localisation {
   display: flex;
   justify-content: center;
@@ -245,7 +241,7 @@ header {
   text-align: justify;
   padding: 30px;
   margin: 40px;
-  transform: translateX(330%);
+  transform: translateX(300%);
 }
 #les_restos h3 {
   padding-left: 40px;

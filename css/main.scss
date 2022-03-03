@@ -1,38 +1,7 @@
 
-$colour-primary:#9356DC;
-$colour-secondary:#FF79DA;
-$colour-tertiary:#99E2D0;
-$colour-gray:#eaeaea;
-$color-dark:#000;
-
-
-
-@mixin btn_violet {
-    &:hover{
-        background: -moz-linear-gradient(top, lighten($colour_secondary,20%), lighten($colour_primary,20%));
-        background: -webkit-linear-gradient(top, lighten($colour_secondary,20%), lighten($colour_primary,20%));
-        background: linear-gradient(to bottom, lighten($colour_secondary,20%) , lighten($colour_primary,20%));
-   }
-}
-
-@mixin btn_coeur{
-    .card-fas--disabled{
-        -webkit-text-stroke: 1px black;
-        color: white;
-        &:hover{
-            animation: progress-heart 1000ms;
-            -webkit-text-stroke: 0px ;
-            background: -moz-linear-gradient(top, $colour_primary  0%, $colour_primary 100%);
-            background: -webkit-linear-gradient(top, $colour_primary  0%, $colour_primary 100%);
-            background: linear-gradient(to bottom, $colour_primary  0%, $colour_primary 100%);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-}
-
+@import "variable";
+@import "mixin";
+@import "loader";
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -53,84 +22,7 @@ header{
     font-size: 50px;
    
 }
-.fond_chargement{
-    font-size: 40px;
-    animation: fond_chargement 2000ms;
-    animation-fill-mode: forwards;
-    background-color: gainsboro;
-}
-@keyframes fond_chargement{
-    0%{
-       
-        visibility:hidden;
-        
-    }
-    99%{
-        
-        visibility:hidden;
-       
-    }
-    100%{
-        
-        visibility:visible;
-       
-    }
-}
 
-@keyframes fond_chargement{
-    20%{
-       
-        visibility:visible;
-    }
-    98%{
-        
-        visibility:visible;
-        font-size: 40px;
-    }
-    99%{
-        
-        visibility:visible;
-        font-size: 0;
-        height:2000px;
-
-    }
-    100%{
-        
-        visibility:hidden;
-        height:0;
-        font-size: 0;
-
-    }
-}
-.chargement{
-    border: 15px solid #f3f3f3;
-    border-top: 15px solid $colour_secondary;
-    border-bottom: 15px solid $colour_tertiary;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: spin 2s;
-    -o-animation: spin 2s;
-    animation: spin 2s;
-    opacity: O;
-    margin: auto;
-    position: absolute;
-    left: 0; top: 0; bottom: 0; right: 0;
-    
-}
-    
-    
-    @keyframes spin {
-        0%{
-            transform: rotate(0deg);
-            opacity: 0;
-        }
-        100%{
-            transform: rotate(360deg);
-            opacity: 1;
-        }
-        
-    }
     
 
 .btn_localisation{
@@ -278,7 +170,7 @@ header{
         text-align: justify;
         padding: 30px;
         margin: 40px;
-        transform: translateX(330%);
+        transform: translateX(300%);
         
     }
      h3{

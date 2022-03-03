@@ -1,0 +1,76 @@
+.fond_chargement{
+    font-size: 40px;
+    animation: fond_chargement 3000ms;
+    animation-fill-mode: forwards;
+    background-color: gainsboro;
+    
+    
+}
+@keyframes fond_chargement{
+    0%{
+       
+        visibility:visible;
+        
+    }
+    99%{
+        
+        visibility:hidden;
+       
+    }
+    100%{
+        
+        visibility:visible;
+       
+    }
+}
+
+@keyframes fond_chargement{
+    0%{
+       
+        visibility:visible;
+    }
+    
+    99%{
+        
+        visibility:visible;
+        font-size: 0;
+        height:2000px;
+
+    }
+    100%{
+        
+        visibility:hidden;
+        height:0;
+        font-size: 0;
+
+    }
+}
+.chargement{
+    border: 15px solid #f3f3f3;
+    border-top: 15px solid $colour_secondary;
+    border-bottom: 15px solid $colour_tertiary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s;
+    -o-animation: spin 2s;
+    animation: spin 2s;
+    opacity: 1;
+    margin: auto;
+    position: absolute;
+    left: 0; top: 0; bottom: 0; right: 0;
+    
+}
+    
+    
+    @keyframes spin {
+        0%{
+            transform: rotate(0deg);
+            opacity: 0;
+        }
+        100%{
+            transform: rotate(360deg);
+            opacity: 1;
+        }
+        
+    }
