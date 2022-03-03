@@ -1,15 +1,7 @@
-.fond_chargement{
-    font-size: 40px;
-    animation: fond_chargement 3000ms;
-    animation-fill-mode: forwards;
-    background-color: gainsboro;
-    
-    
-}
-@keyframes fond_chargement{
+@keyframes intro-appear{
     0%{
        
-        visibility:visible;
+        visibility:hidden;
         
     }
     99%{
@@ -24,12 +16,16 @@
     }
 }
 
-@keyframes fond_chargement{
+@keyframes intro-disappear{
     0%{
        
         visibility:visible;
     }
-    
+    98%{
+        
+        visibility:visible;
+        font-size: 40px;
+    }
     99%{
         
         visibility:visible;
@@ -45,32 +41,54 @@
 
     }
 }
-.chargement{
-    border: 15px solid #f3f3f3;
-    border-top: 15px solid $colour_secondary;
-    border-bottom: 15px solid $colour_tertiary;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: spin 2s;
-    -o-animation: spin 2s;
-    animation: spin 2s;
-    opacity: 1;
-    margin: auto;
-    position: absolute;
-    left: 0; top: 0; bottom: 0; right: 0;
-    
-}
-    
-    
-    @keyframes spin {
-        0%{
-            transform: rotate(0deg);
-            opacity: 0;
-        }
-        100%{
-            transform: rotate(360deg);
-            opacity: 1;
-        }
+
+@keyframes intro-text-anim{
+    from{
+        transform: scale(1);
+        color:white;
+      
         
     }
+    to{
+        transform: scale(1.5);
+        color:gray;
+        padding-top: 200px;
+        text-decoration:underline;
+        
+    }
+}
+
+
+
+#intro_launch{
+    font-family: 'Shrikhand', cursive;
+    font-size: 60px;
+    animation: intro-disappear 5000ms;
+    animation-fill-mode: forwards;
+    background-color: black;
+    height: 2000px;
+
+    &-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 15px;
+    }
+    & p{
+        display: block;
+        animation:intro-text-anim 4000ms infinite;
+        color: #9356DC;
+        text-shadow: 0 0 15px gray, 0 0 25px whitesmoke;
+    }
+    @for $i from 1 through 9 {
+        & p:nth-child(#{$i}){
+            animation-delay: $i * 400ms;
+
+            
+            
+        }
+    }
+
+
+}

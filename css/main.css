@@ -1,15 +1,6 @@
-.fond_chargement {
-  font-size: 40px;
-  -webkit-animation: fond_chargement 3000ms;
-          animation: fond_chargement 3000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  background-color: gainsboro;
-}
-
-@-webkit-keyframes fond_chargement {
+@-webkit-keyframes intro-appear {
   0% {
-    visibility: visible;
+    visibility: hidden;
   }
   99% {
     visibility: hidden;
@@ -18,10 +9,9 @@
     visibility: visible;
   }
 }
-
-@keyframes fond_chargement {
+@keyframes intro-appear {
   0% {
-    visibility: visible;
+    visibility: hidden;
   }
   99% {
     visibility: hidden;
@@ -30,9 +20,13 @@
     visibility: visible;
   }
 }
-@keyframes fond_chargement {
+@-webkit-keyframes intro-disappear {
   0% {
     visibility: visible;
+  }
+  98% {
+    visibility: visible;
+    font-size: 40px;
   }
   99% {
     visibility: visible;
@@ -45,45 +39,106 @@
     font-size: 0;
   }
 }
-.chargement {
-  border: 15px solid #f3f3f3;
-  border-top: 15px solid #FF79DA;
-  border-bottom: 15px solid #99E2D0;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: spin 2s;
-  animation: spin 2s;
-  opacity: 1;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
-@-webkit-keyframes spin {
-  50% {
-    transform: rotate(0deg);
-    opacity: 1;
+@keyframes intro-disappear {
+  0% {
+    visibility: visible;
+  }
+  98% {
+    visibility: visible;
+    font-size: 40px;
+  }
+  99% {
+    visibility: visible;
+    font-size: 0;
+    height: 2000px;
   }
   100% {
-    transform: rotate(360deg);
-    opacity: 1;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
   }
+}
+@-webkit-keyframes intro-text-anim {
+  from {
+    transform: scale(1);
+    color: white;
+  }
+  to {
+    transform: scale(1.5);
+    color: gray;
+    padding-top: 200px;
+    text-decoration: underline;
+  }
+}
+@keyframes intro-text-anim {
+  from {
+    transform: scale(1);
+    color: white;
+  }
+  to {
+    transform: scale(1.5);
+    color: gray;
+    padding-top: 200px;
+    text-decoration: underline;
+  }
+}
+#intro_launch {
+  font-family: "Shrikhand", cursive;
+  font-size: 40px;
+  -webkit-animation: intro-disappear 5000ms;
+          animation: intro-disappear 5000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-color: black;
+  height: 2000px;
+}
+#intro_launch-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 15px;
+}
+#intro_launch p {
+  display: block;
+  -webkit-animation: intro-text-anim 4000ms infinite;
+          animation: intro-text-anim 4000ms infinite;
+  color: #9356DC;
+  text-shadow: 0 0 15px gray, 0 0 25px whitesmoke;
+}
+#intro_launch p:nth-child(1) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+#intro_launch p:nth-child(2) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+#intro_launch p:nth-child(3) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+#intro_launch p:nth-child(4) {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+#intro_launch p:nth-child(5) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+#intro_launch p:nth-child(6) {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+#intro_launch p:nth-child(7) {
+  -webkit-animation-delay: 2800ms;
+          animation-delay: 2800ms;
+}
+#intro_launch p:nth-child(8) {
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms;
 }
 
-@keyframes spin {
-  50% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
