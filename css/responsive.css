@@ -121,8 +121,7 @@
     font-size: 15px;
   }
   #les_restos .tous_les_card .btn_nouveau {
-    transform: translateX(380px);
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
   }
 
@@ -245,7 +244,6 @@
     font-size: 20px;
   }
   #les_restos .tous_les_card .btn_nouveau {
-    transform: translateX(240%);
     padding: 10px;
     font-size: 20px;
     font-weight: bold;

@@ -294,13 +294,14 @@ header {
   border-radius: 10px/10px;
   color: green;
   position: absolute;
+  top: 5px;
+  right: 5px;
   font-size: 30px;
   font-weight: bold;
   width: auto;
   text-align: justify;
   padding: 30px;
   margin: 40px;
-  transform: translateX(340%);
 }
 #les_restos h3 {
   padding-left: 40px;
