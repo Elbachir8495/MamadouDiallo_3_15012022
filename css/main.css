@@ -84,7 +84,7 @@
 }
 #intro_launch {
   font-family: "Shrikhand", cursive;
-  font-size: 40px;
+  font-size: 60px;
   -webkit-animation: intro-disappear 5000ms;
           animation: intro-disappear 5000ms;
   -webkit-animation-fill-mode: forwards;
@@ -137,6 +137,10 @@
 #intro_launch p:nth-child(8) {
   -webkit-animation-delay: 3200ms;
           animation-delay: 3200ms;
+}
+#intro_launch p:nth-child(9) {
+  -webkit-animation-delay: 3600ms;
+          animation-delay: 3600ms;
 }
 
 body {
@@ -296,7 +300,7 @@ header {
   text-align: justify;
   padding: 30px;
   margin: 40px;
-  transform: translateX(300%);
+  transform: translateX(320%);
 }
 #les_restos h3 {
   padding-left: 40px;
