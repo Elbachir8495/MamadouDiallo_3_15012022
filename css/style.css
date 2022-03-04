@@ -753,7 +753,7 @@ nav {
   padding-top: 30px;
 }
 
-#titre_section .card {
+#banniere .card {
   font-family: "Roboto", sans-serif;
   background-color: white;
   width: 100%;
@@ -790,7 +790,6 @@ nav {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-
 #titre_section .card-zone-img-textover {
   position: absolute;
   top: 400px;
